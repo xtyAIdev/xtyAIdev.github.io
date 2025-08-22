@@ -22,8 +22,8 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 TONGYI_CHAT_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
 TONGYI_IMAGE_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis"
 
-# 维基百科API
-WIKIPEDIA_API_URL = "https://en.wikipedia.org/api/rest_v1/page/random/summary"
+# 中文词汇来源API - 使用中文维基百科随机页面
+WIKIPEDIA_API_URL = "https://zh.wikipedia.org/api/rest_v1/page/random/summary"
 
 def get_wikipedia_seeds(num_seeds=5):
     """从维基百科获取随机文章标题作为种子词汇"""
@@ -42,9 +42,9 @@ def get_wikipedia_seeds(num_seeds=5):
             print(f"获取维基百科种子时出错: {e}")
             continue
     
-    # 如果获取失败，使用备用词汇
+    # 如果获取失败，使用中文备用词汇
     if not seeds:
-        backup_seeds = ["dream", "fantasy", "memory", "vision", "illusion"]
+        backup_seeds = ["梦境", "幻想", "记忆", "幻象", "幻觉", "星辰", "海洋", "森林", "天空", "时间"]
         seeds = random.sample(backup_seeds, min(num_seeds, len(backup_seeds)))
     
     return seeds[:num_seeds]
@@ -114,7 +114,7 @@ def call_tongyi_image_api(prompt):
     }
     
     payload = {
-        "model": "wanx-v1",
+        "model": "wan2.2-t2i-flash",
         "input": {
             "prompt": prompt
         },
