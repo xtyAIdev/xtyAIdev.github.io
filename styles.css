@@ -1,0 +1,396 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 头部导航 */
+header {
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+/* 主要内容区域 */
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* 加载状态 */
+.loading {
+    text-align: center;
+    padding: 3rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #333;
+    border-top: 4px solid #4ecdc4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 错误和空状态消息 */
+.error-message,
+.empty-message {
+    text-align: center;
+    padding: 3rem;
+    color: #ff6b6b;
+}
+
+/* 今日梦境样式 */
+.dream-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dream-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dream-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4ecdc4;
+}
+
+.seeds {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.seed-tag {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.dream-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dream-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dream-text {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #4ecdc4;
+}
+
+.dream-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.dream-meta {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* 档案馆样式 */
+.archive-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.archive-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #4ecdc4;
+}
+
+.archive-header p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.dream-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dream-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dream-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.card-date {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4ecdc4;
+}
+
+.card-seeds {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.card-seeds .seed-tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.card-preview {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.view-details {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.view-details:hover {
+    opacity: 0.9;
+}
+
+/* 关于页面样式 */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #4ecdc4;
+    text-align: center;
+}
+
+.about-content section {
+    margin-bottom: 2rem;
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.about-content h3 {
+    color: #4ecdc4;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.about-content p,
+.about-content li {
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.about-content ul,
+.about-content ol {
+    padding-left: 1.5rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+}
+
+.about-content a {
+    color: #4ecdc4;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+    border-top: 1px solid #333;
+    color: #666;
+}
+
+/* 工具类 */
+.hidden {
+    display: none !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        gap: 1rem;
+    }
+    
+    .dream-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .dream-image img {
+        height: 300px;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-content section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dream-image img {
+        height: 250px;
+    }
+    
+    .dream-text,
+    .dream-meta {
+        padding: 1rem;
+    }
+}

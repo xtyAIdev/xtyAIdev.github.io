@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI梦境档案馆 - 历史档案馆</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI梦境档案馆</h1>
+            <nav>
+                <a href="index.html">今日梦境</a>
+                <a href="archive.html" class="active">历史档案馆</a>
+                <a href="about.html">关于</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="archive-header">
+                <h2>历史梦境档案馆</h2>
+                <p>探索AI创作的所有梦境记录</p>
+            </div>
+
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>正在加载梦境档案...</p>
+            </div>
+
+            <div id="gallery-container" class="gallery-container hidden">
+                <!-- 梦境卡片将通过JavaScript动态生成 -->
+            </div>
+
+            <div id="error-message" class="error-message hidden">
+                <p>无法加载梦境档案，请稍后再试。</p>
+            </div>
+
+            <div id="empty-message" class="empty-message hidden">
+                <p>暂无梦境记录，等待AI创作中...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>由AI每日自动生成 · 零成本自动化项目</p>
+        </footer>
+    </div>
+
+    <script src="archive.js"></script>
+</body>
+</html>

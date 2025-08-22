@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI梦境档案馆 - 今日梦境</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI梦境档案馆</h1>
+            <nav>
+                <a href="index.html" class="active">今日梦境</a>
+                <a href="archive.html">历史档案馆</a>
+                <a href="about.html">关于</a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>正在加载今日梦境...</p>
+            </div>
+
+            <div id="dream-container" class="dream-container hidden">
+                <div class="dream-header">
+                    <h2 id="dream-date">今日梦境</h2>
+                    <div class="seeds" id="dream-seeds"></div>
+                </div>
+
+                <div class="dream-content">
+                    <div class="dream-image">
+                        <img id="dream-img" src="" alt="今日梦境图像">
+                    </div>
+                    <div class="dream-text">
+                        <p id="dream-text"></p>
+                    </div>
+                </div>
+
+                <div class="dream-meta">
+                    <p><strong>种子词汇:</strong> <span id="seeds-list"></span></p>
+                    <p><strong>生成时间:</strong> <span id="generation-time"></span></p>
+                </div>
+            </div>
+
+            <div id="error-message" class="error-message hidden">
+                <p>无法加载梦境数据，请稍后再试。</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>由AI每日自动生成 · 零成本自动化项目</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

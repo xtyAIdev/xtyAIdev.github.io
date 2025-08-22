@@ -1,0 +1,102 @@
+产品需求文档 (PRD): AI梦境档案馆 (The AI Dream Journal)
+文档版本: 1.0 (GitHub Pages Zero-Cost Edition)
+创建日期: 2025年8月22日
+项目负责人: (你的名字)
+项目架构: 纯静态网站 (GitHub Pages) + 自动化内容生成工作流 (GitHub Actions)
+1. 项目概述 (Overview)
+1.1. 项目愿景 (Vision)
+创建一个全自动化的、永不间断的、零运营成本的数字艺术项目。该网站将作为一个公开的“档案馆”，每天由AI“做一场梦”，并将这场虚构的梦境以“文字 + 图像”的形式记录并永久展出，整个过程无需任何服务器或人工干预。
+1.2. 核心理念 (Core Concept)
+本项目的全部资产（代码、内容、图片）都托管在一个公开的GitHub仓库中。一个GitHub Actions工作流被设定为每日定时触发。该工作流会运行一个脚本，此脚本负责完成所有创造性工作：获取灵感“种子”、调用AI模型生成文字和图片。生成完毕后，脚本会将新的内容——具体来说是一张图片文件和一个更新后的JSON数据文件——作为一次新的代码提交 (commit) 推送回它所在的GitHub仓库。GitHub Pages服务会监测到仓库内容发生了变化，并自动重新构建和发布网站。这样，网站的内容就实现了每日的自动化更新。
+1.3. 目标用户 (Target Audience)
+主要受众: 对AI艺术、生成艺术、创意编程、CI/CD自动化流程感兴趣的开发者、设计师和艺术家。
+次要受众: 科技爱好者、招聘人员，以及任何对机器创造力感到好奇的互联网访客。
+核心用户 (即你自己): 通过该项目实践和展示一种现代、高效、零成本的Web自动化解决方案，并创造一个独特的个人品牌标志。
+2. 产品目标 (Goals)
+2.1. 技术目标
+掌握并实践“Git as a Database”的核心思想：将Git仓库本身作为存储和版本化内容的数据库。
+熟练配置GitHub Actions：创建一个健壮的、可定时触发的、能与外部API交互并能将结果提交回仓库的自动化工作流。
+构建纯静态应用：开发一个高性能、高可用、无需任何后端服务器或数据库服务的Web应用。
+API安全管理：学习并实践在CI/CD环境中安全使用API密钥的最佳实践（通过GitHub Secrets）。
+2.2. 产品目标
+提供独特的艺术体验：为访客创造一种每日期待、充满惊喜的浏览体验，见证AI的持续创作。
+建立内容档案：随着时间推移，积累成一个具有相当规模和艺术价值的AI生成梦境数据库，可供回顾和欣赏。
+2.3. 个人目标
+打造亮眼的作品集项目：创建一个可以在简历中突出展示、在技术面试中能深入讲解技术细节和架构思考的代表作。
+驱动持续学习：将项目作为探索AI模型新功能、前端技术和自动化流程的试验田。
+3. 核心功能规格 (Functional Specifications)
+3.1. 自动化梦境生成工作流 (GitHub Actions Workflow)
+此工作流是项目的引擎，定义在仓库的.github/workflows/目录下的一个YAML文件中。
+3.1.1. 触发器 (Trigger)
+需求: 工作流必须在每天协调世界时（UTC）00:01自动执行一次。
+实现: 在工作流YAML文件中使用on: schedule:和cron: '1 0 * * *'语法。
+3.1.2. 核心生成脚本 (generate_dream.py或generate_dream.js)
+需求: 此脚本是工作流的核心，负责所有的数据生成和处理。
+脚本执行步骤:
+环境设置: 脚本开始时，需安装所有必要的依赖库（如requests, Pillow）。
+获取梦境种子: 调用维基百科API (https://en.wikipedia.org/api/rest_v1/page/random/summary) 3到5次，从返回的标题中提取名词，作为本次梦境的“种子”。
+生成梦境文本: 调用大型语言模型（如OpenAI GPT-4o）的API。将种子词汇传入一个精心设计的Prompt，生成一段100-150字的、风格超现实的梦境描述文本。
+精炼图像Prompt: 再次调用语言模型API。将上一步生成的梦境文本作为输入，要求模型将其提炼成一个适合文生图模型的、充满视觉细节的英文Prompt。
+生成梦境图像: 调用文生图模型（如Stability AI）的API，传入精炼后的Prompt，生成图片。将返回的图片数据流保存为一个本地文件，文件名为当天的日期，例如2025-08-22.png。
+准备数据结构: 创建一个字典（或对象），包含今天梦境的所有信息：日期（YYYY-MM-DD格式）、种子词汇数组、梦境文本内容、图像Prompt和图片的本地相对路径（例如assets/images/2025-08-22.png）。
+3.1.3. 数据持久化 (Git Commit & Push)
+需求: 脚本必须将新生成的内容和图片文件提交回GitHub仓库。
+脚本执行步骤:
+克隆/拉取仓库: 确保工作流中的代码是最新的。
+读取现有数据: 打开仓库中的data/dreams.json文件，读取其内容并解析为一个JSON数组。
+更新数据文件: 将上一步中创建的新梦境数据对象，插入到这个数组的最前面（以保证最新的总在第一个）。
+写回数据文件: 将更新后的整个数组序列化为JSON字符串，并覆盖写入回data/dreams.json文件。
+移动图片文件: 将生成的YYYY-MM-DD.png文件移动到仓库的assets/images/目录下。
+执行Git操作:
+配置Git的提交者信息（用户名和邮箱）。
+执行 git add data/dreams.json assets/images/YYYY-MM-DD.png。
+执行 git commit -m "chore: Add dream for YYYY-MM-DD"。
+执行 git push 将更改推送回仓库的主分支。
+3.2. 前端静态网站 (The GitHub Pages Website)
+这是一个纯粹的前端应用，由HTML, CSS和JavaScript构成。
+3.2.1. 主页 (index.html)
+需求: 默认展示最新生成的梦境。
+功能实现 (JavaScript):
+当页面加载时，使用fetch('./data/dreams.json')发起一个网络请求来获取数据文件。
+获取成功后，将响应的文本解析为JSON对象数组。
+提取数组的第一个元素（data[0]），即为最新的梦境。
+通过DOM操作（如document.getElementById().src或.textContent），将最新梦境的图片路径、文本内容、日期和种子词汇填充到页面的指定HTML元素中。
+3.2.2. 历史档案馆页 (archive.html)
+需求: 以网格画廊的形式展示所有历史梦境记录。
+功能实现 (JavaScript):
+与主页一样，首先fetch并解析data/dreams.json文件。
+使用for循环或.forEach()方法遍历整个JSON数组。
+在循环的每一次迭代中，动态地创建一个HTML元素（例如，一个<div class="card">），并在其中创建<img>和<p>等子元素来展示该条梦境记录的图片和日期。
+将新创建的卡片元素追加到页面上一个预设的容器元素（如<main id="gallery-container">）中。
+3.2.3. 关于页面 (about.html)
+需求: 一个简单的静态文本页面，用于解释项目。
+内容:
+项目简介: 清晰地解释“AI梦境档案馆”是什么，以及它如何通过GitHub Actions实现全自动化。
+技术栈: 明确列出使用的技术：GitHub Actions, Python/Node.js, OpenAI API, Stability AI API, HTML, CSS, JavaScript。
+作者信息: 简单介绍你自己，并附上你的GitHub个人主页链接。
+4. 非功能性需求 (Non-Functional Requirements)
+用户界面 (UI/UX):
+设计风格: 采用极简主义、以内容为中心的设计。强烈推荐使用黑暗模式（Dark Mode）以增强艺术作品的视觉冲击力。
+响应式设计: 网站布局必须能自适应桌面、平板和手机屏幕，保证在所有设备上都有良好的浏览体验。
+性能:
+加载速度: 网站应快速加载。由于所有资源都是静态文件，性能天然较好。图片文件在生成后可考虑进行适当的压缩。
+成本:
+运营成本: 零。GitHub Pages和GitHub Actions在公开仓库中提供足够的免费额度，完全可以满足本项目需求。唯一的潜在成本来自AI模型API的调用，但许多服务提供免费的初始额度。
+安全性:
+API密钥管理: 所有外部服务的API密钥（如OpenAI, Stability AI）严禁硬编码在代码中。必须将它们存储在GitHub仓库的Settings > Secrets and variables > Actions中的Secrets里。工作流脚本通过${{ secrets.YOUR_SECRET_NAME }}的方式安全地引用这些密钥。
+5. 技术栈 (Tech Stack)
+自动化工作流: GitHub Actions
+核心脚本语言: Python 或 JavaScript (Node.js)
+数据存储格式: JSON (文件存储在Git仓库中)
+前端技术: 原生 HTML, CSS, JavaScript (不建议引入框架，以保持项目轻量和纯粹)
+网站托管: GitHub Pages
+AI模型服务 (请生成env文件我会自行放入密匙):
+语言模型: deepseek-chat
+图像模型: 通义千问 API 
+6. 最小可行产品 (MVP) 里程碑
+仓库初始化: 创建一个新的公开GitHub仓库。添加README.md和.gitignore文件。
+本地脚本开发: 在本地计算机上编写核心的generate_dream.py或.js脚本。确保它可以成功调用API，生成文本，下载图片，并创建一个包含一条模拟数据的data/dreams.json文件。
+前端页面构建: 编写index.html, archive.html, 和基础的CSS。确保它们可以成功读取本地的data/dreams.json文件并正确地展示内容。
+工作流配置: 在.github/workflows/目录下创建main.yml文件。配置好定时触发器、运行环境（包括Python/Node.js版本）、依赖安装步骤，以及调用核心脚本的命令。
+密钥与Git配置: 在GitHub仓库的Secrets中添加你的API密钥。在工作流文件中添加使用这些密钥的步骤，以及配置Git提交信息和执行git push的步骤。
+部署与测试: 将所有代码推送到GitHub。在仓库设置中启用GitHub Pages。手动触发一次工作流来测试整个流程是否能成功运行、提交文件并更新网站。

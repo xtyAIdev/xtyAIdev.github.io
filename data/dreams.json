@@ -1,0 +1,41 @@
+[
+  {
+    "date": "2025-08-22",
+    "seeds": [
+      "julbåten",
+      "line",
+      "laurier",
+      "kcfi",
+      "alain"
+    ],
+    "text": "我漂浮在一条发光的julbåten上，船身由交织的line编织而成，散发着幽幽蓝光。两岸生长着银色的laurier，叶片低语着古老的诗句。远处浮现KCFI的霓虹招牌，却化作一群星尘组成的飞鸟掠过水面。Alain的身影在迷雾中时隐时现，他手持一朵会呼吸的珊瑚花，花瓣开合间溢出彩虹色的音符。船突然垂直坠入云海，在失重中听见钟表逆流而上的滴答声。",
+    "image_prompt": "Floating on a glowing julbåten woven with lines, emitting soft blue light, silver laurier trees whispering ancient poems along the banks, KCFI neon sign transforming into star-dust birds flying over water, Alain's figure appearing and disappearing in mist, holding a breathing coral flower releasing rainbow-colored musical notes, boat plunges vertically into a sea of clouds, hearing the ticking of clocks moving backwards in zero gravity, surreal dreamy art style",
+    "image_path": "assets/images/2025-08-22.png"
+  },
+  {
+    "date": "2025-08-22",
+    "seeds": [
+      "dream",
+      "fantasy",
+      "memory",
+      "vision",
+      "illusion"
+    ],
+    "text": "在无尽的星海中，我漂浮在一片由记忆碎片组成的云朵上。每个碎片都闪烁着不同的光芒，有的温暖如初阳，有的冰冷如寒夜。我伸手触摸其中一个碎片，瞬间被卷入一个奇幻的世界：巨大的水晶树在月光下闪耀，会说话的狐狸在草地上跳舞，远处的山脉由彩虹编织而成。空气中弥漫着甜蜜的香气，时间在这里失去了意义，只有永恒的梦幻在流淌。",
+    "image_prompt": "A surreal dreamscape with floating memory fragments in a starry sky, giant crystal trees glowing under moonlight, talking foxes dancing on rainbow grass, mountains woven from rainbows, ethereal atmosphere with sweet fragrance, hyperrealistic fantasy art style, mystical lighting, dreamlike composition, intricate details, 4K resolution",
+    "image_path": "assets/images/2025-08-22.png"
+  },
+  {
+    "date": "2025-08-21",
+    "seeds": [
+      "ocean",
+      "whisper",
+      "mirror",
+      "shadow",
+      "echo"
+    ],
+    "text": "我站在一面巨大的镜子前，镜中的倒影却不是我自己。那是一个由海浪和 whispers 组成的透明存在，它向我伸出手，带我潜入深海的梦境。我们在珊瑚城堡中穿梭，与发光的水母共舞，听海星讲述古老的故事。每个气泡都包裹着一个被遗忘的回忆，每道波纹都承载着远方的回声。在这个水下世界里，现实与幻想的边界变得模糊，只有永恒的宁静笼罩着一切。",
+    "image_prompt": "Underwater dream world with giant mirror reflecting ocean creatures, transparent beings made of waves and whispers, glowing coral castles, dancing jellyfish, storytelling starfish, bubbles containing memories, surreal aquatic landscape, mystical blue lighting, ethereal atmosphere, fantasy art style, highly detailed",
+    "image_path": "assets/images/2025-08-21.png"
+  }
+]
