@@ -9,8 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
     hideElement(dreamContainer);
     hideElement(errorMessage);
 
-    // 加载梦境数据，添加时间戳以防止缓存
-    fetch(`./data/dreams.json?t=${new Date().getTime()}`)
+    // 获取URL参数中的日期
+    const urlParams = new URLSearchParams(window.location.search);
+    const targetDate = urlParams.get('date');
+
+    // 加载梦境数据，添加时间戳和缓存控制头以防止缓存
+    fetch(`./data/dreams.json?t=${new Date().getTime()}`, {
+        headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+        }
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error('网络响应不正常');
@@ -19,7 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(dreams => {
             if (dreams && dreams.length > 0) {
-                displayLatestDream(dreams[0]);
+                if (targetDate) {
+                    // 查找特定日期的梦境
+                    const targetDream = dreams.find(dream => dream.date === targetDate);
+                    if (targetDream) {
+                        displayLatestDream(targetDream);
+                    } else {
+                        showError(`找不到 ${targetDate} 的梦境记录`);
+                    }
+                } else {
+                    // 显示最新梦境
+                    displayLatestDream(dreams[0]);
+                }
             } else {
                 showError('暂无梦境数据');
             }
@@ -38,6 +59,9 @@ function displayLatestDream(dream) {
     document.getElementById('dream-text').textContent = dream.text;
     document.getElementById('seeds-list').textContent = dream.seeds.join(', ');
     document.getElementById('generation-time').textContent = formatDate(dream.date);
+
+    // 更新页面标题
+    document.title = `AI梦境档案馆 - ${formatDate(dream.date)}`;
 
     // 显示种子标签
     const seedsContainer = document.getElementById('dream-seeds');

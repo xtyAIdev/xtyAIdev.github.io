@@ -47,7 +47,8 @@ jobs:
           echo "有文件变化，准备提交"
           git add data/dreams.json assets/images/
           git commit -m "chore: Add dream for $(date +'%Y-%m-%d')"
-          git push
+          # 使用force push确保推送成功
+          git push origin HEAD:main --force
         fi
 
     - name: Show changes

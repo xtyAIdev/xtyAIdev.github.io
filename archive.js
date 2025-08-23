@@ -11,8 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     hideElement(errorMessage);
     hideElement(emptyMessage);
 
-    // 加载梦境数据
-    fetch('./data/dreams.json')
+    // 加载梦境数据，添加时间戳和缓存控制头以防止缓存
+    fetch(`./data/dreams.json?t=${new Date().getTime()}`, {
+        headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+        }
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error('网络响应不正常');
@@ -78,9 +84,8 @@ function createDreamCard(dream) {
 }
 
 function viewDreamDetails(date) {
-    // 这里可以跳转到详情页面或显示模态框
-    // 暂时简单跳转到主页，因为主页显示最新梦境
-    window.location.href = 'index.html';
+    // 跳转到主页并传递日期参数
+    window.location.href = `index.html?date=${date}`;
 }
 
 function formatDate(dateString) {

@@ -13,15 +13,25 @@ import random
 import time
 from pathlib import Path
 
-# 配置API密钥
+# 配置API密钥 - 优先从环境变量读取，如果没有则从.env文件读取
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 TONGYI_API_KEY = os.getenv("TONGYI_API_KEY")
 
+# 如果环境变量中没有，尝试从.env文件读取
+if not DEEPSEEK_API_KEY or not TONGYI_API_KEY:
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+        DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+        TONGYI_API_KEY = os.getenv("TONGYI_API_KEY")
+    except ImportError:
+        pass
+
 # 检查API密钥是否存在
 if not DEEPSEEK_API_KEY:
-    raise ValueError("错误: 环境变量 DEEPSEEK_API_KEY 未设置。请在仓库的 Secrets 中配置。")
+    raise ValueError("错误: DEEPSEEK_API_KEY 未设置。请在环境变量或.env文件中配置。")
 if not TONGYI_API_KEY:
-    raise ValueError("错误: 环境变量 TONGYI_API_KEY 未设置。请在仓库的 Secrets 中配置。")
+    raise ValueError("错误: TONGYI_API_KEY 未设置。请在环境变量或.env文件中配置。")
 
 # API端点
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
@@ -32,7 +42,7 @@ TONGYI_IMAGE_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text
 WIKIPEDIA_API_URL = "https://zh.wikipedia.org/api/rest_v1/page/random/summary"
 
 def get_wikipedia_seeds(num_seeds=5):
-    """从维基百科获取随机文章标题作为种子词汇"""
+    """从维基百科获取随机文章标题作为种子词汇（备用方案）"""
     seeds = []
     for _ in range(num_seeds):
         try:
@@ -54,6 +64,38 @@ def get_wikipedia_seeds(num_seeds=5):
         seeds = random.sample(backup_seeds, min(num_seeds, len(backup_seeds)))
     
     return seeds[:num_seeds]
+
+def generate_dream_seeds(num_seeds=5):
+    """使用DeepSeek生成合理的梦境种子词汇"""
+    prompt = f"""请生成{num_seeds}个适合用于梦境创作的中文词汇。
+要求：
+1. 词汇要富有想象力、梦幻、超现实
+2. 适合用于AI生成梦境文本
+3. 词汇之间要有一定的关联性和美感
+4. 每个词汇2-4个汉字
+5. 输出格式：直接输出词汇，用逗号分隔
+
+例如：星辰, 海洋, 记忆, 幻影, 时光"""
+    
+    result = call_deepseek_api(prompt, max_tokens=100)
+    
+    if result:
+        try:
+            # 清理结果，提取词汇
+            seeds = [seed.strip() for seed in result.split(',')]
+            seeds = [seed for seed in seeds if 2 <= len(seed) <= 4 and not any(char.isdigit() for char in seed)]
+            
+            if len(seeds) >= num_seeds:
+                return seeds[:num_seeds]
+            else:
+                print(f"DeepSeek生成的词汇不足{num_seeds}个，使用备用方案")
+                return get_wikipedia_seeds(num_seeds)
+        except Exception as e:
+            print(f"处理DeepSeek生成的词汇时出错: {e}")
+            return get_wikipedia_seeds(num_seeds)
+    else:
+        print("DeepSeek生成词汇失败，使用备用方案")
+        return get_wikipedia_seeds(num_seeds)
 
 def call_deepseek_api(prompt, max_tokens=500):
     """调用DeepSeek API生成文本"""
@@ -239,7 +281,7 @@ def main():
     print("开始生成AI梦境...")
     
     # 1. 获取种子词汇
-    seeds = get_wikipedia_seeds(5)
+    seeds = generate_dream_seeds(5)
     print(f"种子词汇: {seeds}")
     
     # 2. 生成梦境文本
