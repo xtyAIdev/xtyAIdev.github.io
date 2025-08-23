@@ -51,8 +51,11 @@ def get_wikipedia_seeds(num_seeds=5):
 
 def call_deepseek_api(prompt, max_tokens=500):
     """调用DeepSeek API生成文本"""
+    # 清理API密钥，移除可能的引号或空格
+    api_key = DEEPSEEK_API_KEY.strip().strip('"').strip("'")
+    
     headers = {
-        "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
     
@@ -77,8 +80,11 @@ def call_deepseek_api(prompt, max_tokens=500):
 
 def call_tongyi_chat_api(prompt, max_tokens=300):
     """调用通义千问聊天API"""
+    # 清理API密钥，移除可能的引号或空格
+    api_key = TONGYI_API_KEY.strip().strip('"').strip("'")
+    
     headers = {
-        "Authorization": f"Bearer {TONGYI_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
     
@@ -107,8 +113,11 @@ def call_tongyi_chat_api(prompt, max_tokens=300):
 
 def call_tongyi_image_api(prompt):
     """调用通义千问图像生成API（异步方式）"""
+    # 清理API密钥，移除可能的引号或空格
+    api_key = TONGYI_API_KEY.strip().strip('"').strip("'")
+    
     headers = {
-        "Authorization": f"Bearer {TONGYI_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
         "X-DashScope-Async": "enable"  # 启用异步调用
     }
