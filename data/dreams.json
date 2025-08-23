@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-23",
+    "seeds": [
+      "三明治麵包",
+      "硝酸汞",
+      "阿尔布尔斯",
+      "尚托",
+      "覃子豪"
+    ],
+    "text": "我梦见自己行走在一片巨大的三明治麵包铺就的小径上，空气中弥漫着硝酸汞的银色烟雾，它们如藤蔓般缠绕着我的手腕。阿尔布尔斯——那位传说中的星象守护者——悬浮于空中，他的长袍由无数闪烁的星座织成。突然，尚托的钟声从远方传来，每一声都化作发光的鸽子，撞碎在覃子豪的诗页上。那些文字像蝌蚪般游动，重组为无法解读的预言。整个梦境如水中倒影，轻轻一触便荡漾起涟漪般的谜团。",
+    "image_prompt": "A surreal dream path paved with giant slices of sandwich bread, surrounded by silver mercury nitrate smoke curling like vines around wrists, the legendary star guardian Albur hovering above in a robe woven from twinkling constellations, distant chimes transforming into glowing doves that shatter upon pages of Zihao's poetry, letters swimming and reassembling into undecipherable prophecies, the whole scene reflecting like a water mirage, rippling with enigmatic mysteries.",
+    "image_path": "assets/images/2025-08-23.png"
+  },
+  {
     "date": "2025-08-22",
     "seeds": [
       "尚索尔地区圣朱利安",
