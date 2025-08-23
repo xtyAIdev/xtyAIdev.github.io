@@ -38,46 +38,28 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 TONGYI_CHAT_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
 TONGYI_IMAGE_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis"
 
-# 中文词汇来源API - 使用中文维基百科随机页面
-WIKIPEDIA_API_URL = "https://zh.wikipedia.org/api/rest_v1/page/random/summary"
-
-def get_wikipedia_seeds(num_seeds=5):
-    """从维基百科获取随机文章标题作为种子词汇（备用方案）"""
-    seeds = []
-    for _ in range(num_seeds):
-        try:
-            response = requests.get(WIKIPEDIA_API_URL, timeout=10)
-            if response.status_code == 200:
-                data = response.json()
-                title = data.get('title', '')
-                # 提取名词（简单处理：取标题中的主要词汇）
-                words = title.split()
-                if words:
-                    seeds.append(words[0].lower())
-        except Exception as e:
-            print(f"获取维基百科种子时出错: {e}")
-            continue
-    
-    # 如果获取失败，使用中文备用词汇
-    if not seeds:
-        backup_seeds = ["梦境", "幻想", "记忆", "幻象", "幻觉", "星辰", "海洋", "森林", "天空", "时间"]
-        seeds = random.sample(backup_seeds, min(num_seeds, len(backup_seeds)))
-    
-    return seeds[:num_seeds]
+# 中文备用词汇（仅在DeepSeek完全失败时使用）
+BACKUP_SEEDS = ["梦境", "幻想", "记忆", "幻象", "星辰", "海洋", "森林", "天空", "时间", "光影"]
 
 def generate_dream_seeds(num_seeds=5):
     """使用DeepSeek生成合理的梦境种子词汇"""
-    prompt = f"""请生成{num_seeds}个适合用于梦境创作的中文词汇。
-要求：
-1. 词汇要富有想象力、梦幻、超现实
-2. 适合用于AI生成梦境文本
-3. 词汇之间要有一定的关联性和美感
-4. 每个词汇2-4个汉字
-5. 输出格式：直接输出词汇，用逗号分隔
-
-例如：星辰, 海洋, 记忆, 幻影, 时光"""
+    # 添加随机主题和风格来确保每天生成不同的词汇
+    themes = ["星空宇宙", "深海秘境", "时间旅行", "记忆迷宫", "幻想生物","古代穿越", "超现实景观", "情感共鸣", "未来科技"]
+    styles = ["诗意", "神秘", "奇幻", "科幻", "浪漫", "哲学", "抽象", "象征","搞笑","恐怖"]
     
-    result = call_deepseek_api(prompt, max_tokens=100)
+    # 随机选择主题和风格
+    theme = random.choice(themes)
+    style = random.choice(styles)
+    
+    prompt = f"""请生成{num_seeds}个适合用于梦境创作的中文词汇，主题围绕{theme}，风格偏向{style}。
+要求：
+1. 词汇需富有想象力和梦幻感，适合用于AI生成梦境文本，保持一定的内在关联
+2. 每个词为2~4个汉字，且避免全部为相同字数。可兼顾创意与大众化表达。
+3. 输出格式：直接输出词汇，用逗号分隔
+例如：星辰, 海洋, 我的回忆, 麦穗, 时光机"""
+    
+    # 为词汇生成使用更高的随机temperature范围（0.8-1.0）来增加创意性
+    result = call_deepseek_api(prompt, max_tokens=100, temperature=round(random.uniform(0.8, 1.0), 1))
     
     if result:
         try:
@@ -85,19 +67,25 @@ def generate_dream_seeds(num_seeds=5):
             seeds = [seed.strip() for seed in result.split(',')]
             seeds = [seed for seed in seeds if 2 <= len(seed) <= 4 and not any(char.isdigit() for char in seed)]
             
-            if len(seeds) >= num_seeds:
-                return seeds[:num_seeds]
+            # 只要有2个或以上有效词汇就接受
+            if len(seeds) >= 2:
+                # 如果词汇多于需求，随机打乱并取前num_seeds个
+                if len(seeds) > num_seeds:
+                    random.shuffle(seeds)
+                    return seeds[:num_seeds]
+                else:
+                    return seeds  # 返回所有有效词汇，即使少于5个
             else:
-                print(f"DeepSeek生成的词汇不足{num_seeds}个，使用备用方案")
-                return get_wikipedia_seeds(num_seeds)
+                print(f"DeepSeek生成的有效词汇不足2个，使用简单备用词汇")
+                return random.sample(BACKUP_SEEDS, min(num_seeds, len(BACKUP_SEEDS)))
         except Exception as e:
             print(f"处理DeepSeek生成的词汇时出错: {e}")
-            return get_wikipedia_seeds(num_seeds)
+            return random.sample(BACKUP_SEEDS, min(num_seeds, len(BACKUP_SEEDS)))
     else:
-        print("DeepSeek生成词汇失败，使用备用方案")
-        return get_wikipedia_seeds(num_seeds)
+        print("DeepSeek生成词汇失败，使用简单备用词汇")
+        return random.sample(BACKUP_SEEDS, min(num_seeds, len(BACKUP_SEEDS)))
 
-def call_deepseek_api(prompt, max_tokens=500):
+def call_deepseek_api(prompt, max_tokens=500, temperature=None):
     """调用DeepSeek API生成文本"""
     # 清理API密钥，移除可能的引号或空格
     api_key = DEEPSEEK_API_KEY.strip().strip('"').strip("'")
@@ -107,11 +95,15 @@ def call_deepseek_api(prompt, max_tokens=500):
         "Content-Type": "application/json"
     }
     
+    # 如果没有指定temperature，使用随机值（0.7-1.0之间）
+    if temperature is None:
+        temperature = round(random.uniform(0.7, 1.0), 1)
+    
     payload = {
         "model": "deepseek-chat",
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": max_tokens,
-        "temperature": 0.8
+        "temperature": temperature
     }
     
     try:
