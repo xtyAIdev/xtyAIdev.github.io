@@ -183,8 +183,8 @@ def call_tongyi_image_api(prompt):
     }
     
     try:
-        # 第一步：创建异步任务
-        response = requests.post(TONGYI_IMAGE_API_URL, json=payload, headers=headers, timeout=60)
+        # 第一步：创建异步任务 - 增加超时时间到120秒
+        response = requests.post(TONGYI_IMAGE_API_URL, json=payload, headers=headers, timeout=120)
         if response.status_code == 200:
             result = response.json()
             task_id = result['output']['task_id']
@@ -197,41 +197,49 @@ def call_tongyi_image_api(prompt):
             
             for attempt in range(max_attempts):
                 time.sleep(wait_time)
-                task_response = requests.get(task_url, headers=headers, timeout=30)
-                
-                if task_response.status_code == 200:
-                    task_result = task_response.json()
-                    # 调试输出，查看完整的响应结构
-                    print(f"任务响应: {json.dumps(task_result, ensure_ascii=False)[:200]}...")
+                try:
+                    task_response = requests.get(task_url, headers=headers, timeout=60)  # 增加查询超时时间
                     
-                    task_status = task_result['output']['task_status']
-                    
-                    if task_status == 'SUCCEEDED':
-                        # 通义千问的响应结构可能有变化，需要灵活处理
-                        if 'results' in task_result['output'] and task_result['output']['results']:
-                            image_url = task_result['output']['results'][0]['url']
-                        elif 'task_result' in task_result['output'] and 'image_urls' in task_result['output']['task_result']:
-                            image_url = task_result['output']['task_result']['image_urls'][0]
-                        else:
-                            print("无法找到图像URL")
+                    if task_response.status_code == 200:
+                        task_result = task_response.json()
+                        # 调试输出，查看完整的响应结构
+                        print(f"任务响应: {json.dumps(task_result, ensure_ascii=False)[:200]}...")
+                        
+                        task_status = task_result['output']['task_status']
+                        
+                        if task_status == 'SUCCEEDED':
+                            # 通义千问的响应结构可能有变化，需要灵活处理
+                            if 'results' in task_result['output'] and task_result['output']['results']:
+                                image_url = task_result['output']['results'][0]['url']
+                            elif 'task_result' in task_result['output'] and 'image_urls' in task_result['output']['task_result']:
+                                image_url = task_result['output']['task_result']['image_urls'][0]
+                            else:
+                                print("无法找到图像URL")
+                                return None
+                                
+                            # 下载图像 - 增加超时时间
+                            image_response = requests.get(image_url, timeout=60)
+                            if image_response.status_code == 200:
+                                return image_response.content
+                            else:
+                                print(f"下载图像时出错: {image_response.status_code}")
+                                return None
+                        elif task_status == 'FAILED':
+                            error_msg = task_result['output'].get('message', '未知错误')
+                            print(f"图像生成任务失败: {error_msg}")
                             return None
-                            
-                        # 下载图像
-                        image_response = requests.get(image_url, timeout=30)
-                        if image_response.status_code == 200:
-                            return image_response.content
-                        else:
-                            print(f"下载图像时出错: {image_response.status_code}")
-                            return None
-                    elif task_status == 'FAILED':
-                        error_msg = task_result['output'].get('message', '未知错误')
-                        print(f"图像生成任务失败: {error_msg}")
-                        return None
-                    # 如果任务还在处理中，继续等待
-                    print(f"任务处理中... ({attempt + 1}/{max_attempts})")
-                else:
-                    print(f"查询任务状态失败: {task_response.status_code}")
-                    return None
+                        # 如果任务还在处理中，继续等待
+                        print(f"任务处理中... ({attempt + 1}/{max_attempts})")
+                    else:
+                        print(f"查询任务状态失败: {task_response.status_code}")
+                        # 不立即返回，继续重试
+                        continue
+                except requests.exceptions.Timeout:
+                    print(f"查询任务状态超时，尝试 {attempt + 1}/{max_attempts}")
+                    continue
+                except Exception as e:
+                    print(f"查询任务状态时发生错误: {e}")
+                    continue
             
             print("图像生成超时")
             return None
