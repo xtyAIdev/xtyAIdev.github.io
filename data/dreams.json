@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-23",
+    "seeds": [
+      "星尘漩涡",
+      "琉璃鲸落",
+      "时之沙漏",
+      "梦核回廊",
+      "以太浮萍"
+    ],
+    "text": "我漂浮在星尘漩涡的中心，无数光点如萤火般缠绕指尖。远方，一具琉璃鲸落缓缓沉入深空，透明的躯体内有星座明灭。时之沙漏在头顶倾覆，金沙向上流淌，将记忆凝成新的星云。穿过梦核回廊时，墙壁由叠放的梦境切片构成，偶尔浮现半张微笑的侧脸。足尖轻点以太浮萍，它们便漾开彩虹色的涟漪，托着我向漩涡尽头的光晕游去。那里有絮语在轻轻召唤，却始终隔着一层发光的雾。",
+    "image_prompt": "Floating in the center of a stardust vortex, countless light points like fireflies entwine around my fingertips. In the distance, a crystal whale slowly sinks into the deep space, with constellations flickering inside its transparent body. An hourglass above pours golden sand upwards, forming new nebulas from memories. The corridor walls are made of stacked dream slices, occasionally revealing half a smiling profile. Tiptoeing on ether lilies, they ripple in rainbow colors, carrying me towards the glowing aura at the vortex's end. Whispering calls beckon through a luminous mist.",
+    "image_path": "assets/images/2025-08-23.png"
+  },
+  {
     "date": "2025-08-22",
     "seeds": [
       "尚索尔地区圣朱利安",
