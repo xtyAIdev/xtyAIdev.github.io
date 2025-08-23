@@ -17,6 +17,12 @@ from pathlib import Path
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 TONGYI_API_KEY = os.getenv("TONGYI_API_KEY")
 
+# 检查API密钥是否存在
+if not DEEPSEEK_API_KEY:
+    raise ValueError("错误: 环境变量 DEEPSEEK_API_KEY 未设置。请在仓库的 Secrets 中配置。")
+if not TONGYI_API_KEY:
+    raise ValueError("错误: 环境变量 TONGYI_API_KEY 未设置。请在仓库的 Secrets 中配置。")
+
 # API端点
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 TONGYI_CHAT_API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
