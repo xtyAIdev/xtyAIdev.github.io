@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     hideElement(dreamContainer);
     hideElement(errorMessage);
 
-    // 加载梦境数据
-    fetch('./data/dreams.json')
+    // 加载梦境数据，添加时间戳以防止缓存
+    fetch(`./data/dreams.json?t=${new Date().getTime()}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('网络响应不正常');
@@ -37,7 +37,7 @@ function displayLatestDream(dream) {
     document.getElementById('dream-img').alt = `${dream.date}的梦境图像`;
     document.getElementById('dream-text').textContent = dream.text;
     document.getElementById('seeds-list').textContent = dream.seeds.join(', ');
-    document.getElementById('generation-time').textContent = new Date().toLocaleString('zh-CN');
+    document.getElementById('generation-time').textContent = formatDate(dream.date);
 
     // 显示种子标签
     const seedsContainer = document.getElementById('dream-seeds');
