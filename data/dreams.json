@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-24",
+    "seeds": [
+      "星轨迷途",
+      "以太回响",
+      "幻光星尘",
+      "深空低语",
+      "量子泡沫"
+    ],
+    "text": "我漂浮于无垠的宇宙，脚下是流转交错的星轨迷途，仿佛银色血管脉动着未知的韵律。耳边响起以太回响，像是星辰碎裂时的歌谣，穿透真空低吟不止。幻光星尘如纱缠绕指尖，每一次颤动都绽出虹色漩涡，裹挟着我向深渊滑落。某个瞬间，深空低语自四面八方涌来，用无法解读的古老音节叩击灵魂。而后万物坍缩为量子泡沫，我在概率的浪尖起舞，化作一簇闪烁的尘埃，重新没入永恒的星轨之梦。",
+    "image_prompt": "Floating in the infinite cosmos, surrounded by intertwining star trails like silver veins pulsing with unknown rhythms, ethereal echoes of stars shattering resonate through the vacuum. Iridescent stardust swirls around my fingertips, each flicker creating rainbow vortices pulling me into the abyss. Whispers from the deep space envelop me in undecipherable ancient syllables, then everything collapses into quantum foam, dancing on the crest of probabilities, transforming into a cluster of shimmering dust, merging back into the eternal dream of star trails. Surreal and dreamy art style.",
+    "image_path": "assets/images/2025-08-24.png"
+  },
+  {
     "date": "2025-08-23",
     "seeds": [
       "星尘漩涡",
