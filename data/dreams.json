@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-25",
+    "seeds": [
+      "幻羽蝶",
+      "星尘鲸",
+      "月光鹿",
+      "琉璃梦魇",
+      "云纱灵"
+    ],
+    "text": "我漂浮在流淌的星辉之河上，一群闪烁着虹光的幻羽蝶掠过眼帘，它们的翅膀洒下细碎的梦境粉末。远处，一头巨大的星尘鲸缓缓游过天际，每一次摆尾都荡开银蓝色的涟漪。月光鹿从发光的森林中踱步而出，鹿角上缠绕着柔和的云纱灵，如同飘动的雾气。突然，一片琉璃梦魇悄然浮现，折射出扭曲而瑰丽的幻象，却在蝶群轻触下化作晶莹的尘埃消散。万物在静谧中低语，仿佛整个宇宙只是一场轻盈的呼吸。",
+    "image_prompt": "Floating on a river of starlight, iridescent dream butterflies with shimmering wings scatter dream dust, a colossal stardust whale swims across the sky leaving silver-blue ripples, luminous moonlight deer with cloud-like veils on antlers step out from glowing forests, surreal and dreamy art style, everything whispers in serene beauty as if the universe is a light breath, a prismatic nightmare dissolves into sparkling dust upon butterfly touch",
+    "image_path": "assets/images/2025-08-25.png"
+  },
+  {
     "date": "2025-08-24",
     "seeds": [
       "星轨迷途",
