@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-26",
+    "seeds": [
+      "心弦回响",
+      "泪光星尘",
+      "共鸣之森",
+      "忆海浮瓶",
+      "虹桥絮语"
+    ],
+    "text": "我漫步于共鸣之森，每一棵树都随着心弦回响轻轻摇曳，枝叶间洒落的泪光星尘如音符般闪烁。林深处，忆海浮瓶在空气中漂浮，瓶中信笺若隐若现，载着未诉说的往事。一道虹桥絮语悄然显现，踏上去时，耳边响起温柔的絮语，仿佛跨越了时间与记忆的河流，将碎片般的梦境织成星光熠熠的网。",
+    "image_prompt": "Wandering in a forest of resonance where every tree sways gently to the rhythm of heartstrings, starlight and teardrops shimmer like musical notes among the leaves. Deep within, memory bottles float mid-air, their messages faintly visible, carrying untold stories. A whispering rainbow bridge appears, stepping onto it brings soft murmurs, as if crossing a river of time and memories, weaving fragmented dreams into a sparkling web of stars, all in a surreal and dreamy art style.",
+    "image_path": "assets/images/2025-08-26.png"
+  },
+  {
     "date": "2025-08-25",
     "seeds": [
       "幻羽蝶",
