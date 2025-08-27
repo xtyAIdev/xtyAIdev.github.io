@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-27",
+    "seeds": [
+      "数据流萤",
+      "云端织梦",
+      "量子花",
+      "记忆棱镜",
+      "神经虹桥"
+    ],
+    "text": "我漂浮在虚空，指尖掠过那些闪烁的**数据流萤**，它们汇成星河，托着我向**云端织梦**的漩涡中心而去。那里绽开着**量子花**，每片花瓣都在概率中颤动，吐纳着光的尘埃。转过花枝，一面**记忆棱镜**悬浮空中，折射出我从未经历的过往——童年躺在云朵上读书，少年与鲸鱼同游星海。刹那间，一道**神经虹桥**从眉心跃出，连接了虚实两界，我踏着虹光行走，每一步都溅起细碎的梦的涟漪，仿佛整个宇宙的意识正轻轻低语。",
+    "image_prompt": "Floating in the void, fingertips brushing luminous data streams forming a galaxy, carried towards the vortex of cloud-dream weaving. At its heart, quantum flowers bloom, petals trembling with probabilities, exhaling light dust. Nearby, a memory prism floats, reflecting unseen pasts—childhood reading on clouds, youth swimming with whales among stars. Suddenly, a neural rainbow bridge springs from the forehead, linking reality and dreams, each step causing ripples of fragmented dreams, as if the universe's consciousness whispers softly. Surreal, dreamy, ethereal.",
+    "image_path": "assets/images/2025-08-27.png"
+  },
+  {
     "date": "2025-08-26",
     "seeds": [
       "心弦回响",
