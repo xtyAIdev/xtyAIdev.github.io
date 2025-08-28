@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-28",
+    "seeds": [
+      "记忆回廊",
+      "碎镜迷途",
+      "心渊",
+      "时之沙漏",
+      "遗忘之茧"
+    ],
+    "text": "我漫步在无尽的记忆回廊，两侧墙壁由无数碎镜迷途拼凑而成，每一片都映出我扭曲的倒影。脚下忽然塌陷，坠入深不见底的心渊，那里时间以沙漏的形态悬浮空中，金黄的时之沙漏缓缓倒流，将往事重新编织。黑暗中浮现一枚发光茧蛹——遗忘之茧轻轻颤动，透出微弱心跳般的暖光，当我触碰它的瞬间，万千记忆如萤火虫破茧而出，在时之沙中翩然起舞。",
+    "image_prompt": "Wandering through an endless corridor of memories, walls composed of countless fragmented mirrors reflecting distorted images. Suddenly falling into a bottomless abyss where time is suspended as floating hourglasses, golden sands flowing in reverse, reweaving the past. A glowing cocoon of oblivion gently pulsates, emitting a warm light like a faint heartbeat, releasing thousands of memories like fireflies dancing in the sands of time, surreal and dreamlike art style",
+    "image_path": "assets/images/2025-08-28.png"
+  },
+  {
     "date": "2025-08-27",
     "seeds": [
       "数据流萤",
