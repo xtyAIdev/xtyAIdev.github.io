@@ -1,6 +1,7 @@
 # AI梦境档案馆 (AI Dream Journal)
 
 一个全自动化的AI艺术项目，每天由AI创作独特的梦境并以文字和图像形式记录。
+直达地址： https://xtyaidev.github.io/
 
 ## 🌟 项目特色
 
