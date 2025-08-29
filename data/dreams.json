@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-29",
+    "seeds": [
+      "时光回廊",
+      "记忆碎片",
+      "迷途",
+      "镜中我",
+      "遗忘之河"
+    ],
+    "text": "我漫步于无尽的时光回廊，两侧的墙壁由流动的记忆碎片砌成，每一片都闪烁着陌生的欢愉与叹息。迷途之中，无数个镜中我向我招手，它们的笑容既熟悉又遥远，仿佛在低语被尘封的秘密。最终，我抵达遗忘之河，河水如银绸般缓缓流淌，倒映着星辰与逝去的面孔。我俯身掬水，指尖触及的刹那，所有影像化作涟漪散去，只留下一片寂静的虚空，和一颗微微颤动的心。",
+    "image_prompt": "Wandering through an endless corridor of time, walls made of flowing memory fragments, each shimmering with joy and sighs. In the maze, countless mirror images beckon, their familiar yet distant smiles whispering forgotten secrets. Arriving at the river of oblivion, its silver fabric-like water flows gently, reflecting stars and lost faces. Bending to scoop water, images dissolve into ripples upon touch, leaving a silent void and a faintly trembling heart. Surreal, dreamlike, ethereal.",
+    "image_path": "assets/images/2025-08-29.png"
+  },
+  {
     "date": "2025-08-28",
     "seeds": [
       "记忆回廊",
