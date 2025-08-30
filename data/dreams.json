@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-30",
+    "seeds": [
+      "血月悬林",
+      "骨花回廊",
+      "蠕岩之喉",
+      "哀嚎镜渊",
+      "腑脏密林"
+    ],
+    "text": "我踏入一片腑脏密林，巨大的器官在暗处搏动，藤蔓如血管般缠绕脚踝。林间浮现骨花回廊，苍白枝桠绽开无声的花，每一步都踩碎寂静。远处蠕岩之喉缓缓张开，熔岩如唾液滴落，吞噬所有靠近的光线。深渊之下哀嚎镜渊折射着破碎的呜咽，千万个扭曲的我在镜中坠落。抬头只见血月悬林，那猩红光芒渗入万物，将整个世界浸染成一场无法醒来的悸动之梦。",
+    "image_prompt": "Enter a surreal visceral forest, giant organs pulsating in the shadows, vines like veins entwining ankles. Bone-flower corridors emerge, pale branches blooming silent flowers, each step shattering silence. In the distance, a molten throat slowly opens, lava drooling, swallowing all light. Below, an abyss of wailing mirrors reflects fragmented sobs, countless twisted selves falling. Above, a blood moon hangs, its crimson glow seeping into everything, dyeing the world into an unending dream of palpitation.",
+    "image_path": "assets/images/2025-08-30.png"
+  },
+  {
     "date": "2025-08-29",
     "seeds": [
       "时光回廊",
