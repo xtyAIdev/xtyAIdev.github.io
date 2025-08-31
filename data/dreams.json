@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-08-31",
+    "seeds": [
+      "时渊",
+      "回响躯壳",
+      "钟表蠕虫",
+      "昨日之魇",
+      "裂时瞳"
+    ],
+    "text": "我沉入时渊，四周是无数透明的回响躯壳，它们低语着破碎的记忆。钟表蠕虫在虚空里蜿蜒爬行，以齿轮为足，啃食着漂浮的时间刻度。昨日之魇从暗影中浮现，化作缠绕的丝线，编织着悔恨的图景。忽然，裂时瞳在苍穹睁开，金红的瞳孔倒转，将过去与未来撕裂又缝合——霎时间万物失序，星辰如雨坠落，而我在一片寂静的混沌中醒来，指尖仍残留着时间的尘埃。",
+    "image_prompt": "Surreal dreamlike scene, submerged in time abyss surrounded by countless transparent echoing shells whispering broken memories, clockwork worms crawling through void on gear legs eating floating time scales, nightmares from yesterday emerging as entwining threads weaving pictures of regret, suddenly a time-ripping eye opens in the sky with golden-red pupils reversing past and future tearing and mending, stars falling like rain in chaotic silence, waking up amidst the chaos, fingers dusted with temporal residue, ethereal and haunting atmosphere",
+    "image_path": "assets/images/2025-08-31.png"
+  },
+  {
     "date": "2025-08-30",
     "seeds": [
       "血月悬林",
