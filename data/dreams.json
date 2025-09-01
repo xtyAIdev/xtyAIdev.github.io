@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-01",
+    "seeds": [
+      "月影鹿",
+      "琉璃蝶",
+      "星尘鲸",
+      "雾中灵",
+      "虹光贝"
+    ],
+    "text": "我梦见自己赤足行走于水银般的湖面，每一步都漾开虹光贝特有的七彩涟漪。琉璃蝶群从指尖掠过，翅翼洒落晶亮的磷粉。雾中灵在远处林间游荡，半透明的身躯缠绕着乳白色的薄纱。星尘鲸突然从夜空深处跃出，鳞片间倾泻的银河照亮了正在饮水的月影鹿——它珊瑚状的鹿角正开出星芒般的花，又在触及水面的刹那化作万千流萤翩然散去。",
+    "image_prompt": "Barefoot walking on a mercury-like lake surface, each step creating iridescent ripples, surrounded by glass butterflies with luminous wings, spirits wandering in the distant forest wrapped in milky veils, a stardust whale leaping from the night sky illuminating a moonshadow deer drinking water, its coral antlers blooming starlight flowers turning into fireflies upon touching the water, in a surreal and dreamy art style",
+    "image_path": "assets/images/2025-09-01.png"
+  },
+  {
     "date": "2025-08-31",
     "seeds": [
       "时渊",
