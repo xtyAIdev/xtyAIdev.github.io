@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-03",
+    "seeds": [
+      "血月",
+      "蠕动回廊",
+      "哀嚎森林",
+      "眼球云",
+      "骨树"
+    ],
+    "text": "血月低垂，像一只巨大的充血瞳孔凝视着我。我走入一条蠕动回廊，墙壁如内脏般缓缓收缩、舒张，泛着潮湿的暗光。穿过回廊，哀嚎森林在眼前展开——无数骨树扭曲着伸向天际，枝桠碰撞发出清脆而痛苦的哀鸣。天空中漂浮着稠密的眼球云，每一只都映着那轮血月，无声流转着诡谲的光。我踩在沙沙作响的落叶上，每一步都惊起细碎的叹息，仿佛整片森林都在梦中呼吸、凝视、低语。",
+    "image_prompt": "Blood moon hangs low like a giant inflamed pupil, overseeing a surreal corridor with walls resembling pulsating viscera, glistening with damp dark light. Beyond lies a forest of twisted bone trees reaching skyward, their branches clashing in crisp agonized cries under a sky filled with dense clouds of floating eyes, each reflecting the blood moon's eerie glow. The ground is covered in rustling leaves, every step stirring whispers as if the entire forest breathes, watches, and murmurs in a dreamlike state.",
+    "image_path": "assets/images/2025-09-03.png"
+  },
+  {
     "date": "2025-09-02",
     "seeds": [
       "星尘漩涡",
