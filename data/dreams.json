@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-04",
+    "seeds": [
+      "玉镜流光",
+      "青鸾信",
+      "墨书山河",
+      "蜃楼渡",
+      "千年一梦"
+    ],
+    "text": "我执一枚玉镜流光，镜中映出的并非容颜，而是青鸾衔来的云中信札。展开时，墨书山河奔涌而出，字迹化作蛟龙在星穹游弋。忽有蜃楼自镜面浮起，我踏浪而行登临其上，见琉璃阁中仙人弈棋，一子落定便是沧海桑田。渡我至彼岸的舟楫竟是半轮明月，回首处万千城池在气泡中生灭。方悟这千年一梦原是时间琥珀里封存的蝶翅，振翼时抖落粼粼光尘，醒来时仍有星砂自指间滑落。",
+    "image_prompt": "Holding a luminous jade mirror, reflecting not my face but a letter from the clouds brought by a blue phoenix. As it unfolds, ink-drawn landscapes surge out, with calligraphy transforming into dragons swimming among stars. Suddenly, a mirage rises from the mirror's surface; I walk on waves to reach it, finding immortals playing chess in a crystal pavilion. A half-moon serves as my boat, and behind me, countless cities bubble and vanish. This dream is like a butterfly's wing sealed in amber, shimmering with star dust that slips through my fingers upon awakening. Hyperrealistic, ethereal, and richly detailed.",
+    "image_path": "assets/images/2025-09-04.png"
+  },
+  {
     "date": "2025-09-03",
     "seeds": [
       "血月",
