@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-09-06",
+    "seeds": [
+      "深潜者",
+      "晶核",
+      "渊语",
+      "星涡"
+    ],
+    "text": "我沉入一片无光的深海，四周游弋着人身鱼尾的深潜者，它们的眼睛如同破碎的月光。在深渊的中央，一枚巨大的晶核缓缓旋转，内部闪烁着星涡般的螺旋光纹，仿佛囚禁着整个宇宙的梦境。深潜者开始低吟，那是一种古老的渊语，音节如气泡般上升、破裂，每一句都解开一层现实的锁链。星涡自晶核中涌现，将我卷入光的漩涡，在失去重力的瞬间，我与深渊共享了同一份记忆——我们都是被遗忘的词语，漂流在时间之外。",
+    "image_prompt": "Submerged in a lightless deep sea surrounded by mermaid-like deep divers with eyes like shattered moonlight, at the center lies a massive crystal core slowly rotating, containing spiral light patterns reminiscent of star vortices, imprisoning a universe's dream. The deep divers chant in an ancient tongue, bubbles rising and bursting, each syllable unraveling reality's chains. Star vortices emerge from the core, enveloping me in a whirlpool of light, sharing memories of being forgotten words adrift beyond time, all in a surreal, dreamlike art style.",
+    "image_path": "assets/images/2025-09-06.png"
+  },
+  {
     "date": "2025-09-05",
     "seeds": [
       "量子海",
