@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-08",
+    "seeds": [
+      "血月悬城",
+      "蠕动长廊",
+      "哀嚎森林",
+      "瞳中深渊",
+      "骨白沙漠"
+    ],
+    "text": "血月悬城，将猩红的光芒浸染着无边的骨白沙漠。我踏入一座不断延伸的蠕动长廊，墙壁如呼吸般起伏，地面柔软如生物的内脏。穿过长廊，哀嚎森林在远处低吟，每棵树干都扭曲成痛苦的形态，风声里夹杂着无声的哭泣。当我靠近，一棵巨树的裂痕突然睁开——那是瞳中深渊，深不见底，倒映着血月与我恐惧的面容。我坠入其中，不断下落，深渊之下仍是沙漠，月光如血，循环没有尽头。",
+    "image_prompt": "A blood moon hangs over an endless bone-white desert, casting a crimson glow. Enter a sprawling, undulating corridor with walls that breathe and a floor soft as living innards. Beyond, a groaning forest of twisted, agonized trees whispers silent cries. Approaching, a colossal tree's fissure opens to reveal an abyssal eye, reflecting the blood moon and my terrified face. Falling endlessly into this surreal, dreamlike loop, where below is more desert bathed in bloody moonlight.",
+    "image_path": "assets/images/2025-09-08.png"
+  },
+  {
     "date": "2025-09-07",
     "seeds": [
       "幻光兽",
