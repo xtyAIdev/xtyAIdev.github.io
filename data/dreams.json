@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-09",
+    "seeds": [
+      "幻光蝶",
+      "梦织蛛",
+      "晶语兽",
+      "雾中灵",
+      "心渊鲸"
+    ],
+    "text": "我漂浮在无垠的梦境之海中，一只巨大的心渊鲸从下方缓缓游过，它的脊背上闪烁着星辉般的纹路。雾中灵们如流动的丝绸在空气中盘旋，留下银色的轨迹。幻光蝶群忽然从迷雾中涌现，翅膀洒下磷粉般的虹光，每一振翅都撕裂黑暗，绽开短暂的花火。梦织蛛在光蝶飞过的路径上编织透明的网，网上凝结着晶莹的露珠与破碎的梦境片段。远处传来晶语兽的低吟，它们的身体如水晶般透明，声音像风铃在记忆的深渊中回响，整个空间仿佛随之共振，化作一片易碎的琉璃幻境。",
+    "image_prompt": "Floating in an endless dream sea, a colossal heart-depth whale swims below, its back shimmering with starlit patterns. Ethereal spirits swirl like flowing silk, leaving silver trails. Suddenly, a swarm of luminescent butterflies emerges from the mist, their wings scattering phosphorescent rainbow light, each flutter tearing darkness, bursting into fleeting fireworks. Dream-weaving spiders spin transparent webs along the butterfly paths, dewdrops and fragmented dreams glistening upon them. In the distance, crystal beasts murmur, their bodies translucent, voices echoing like wind chimes through the abyss of memories, the entire space resonating, transforming into a fragile lustrous illusion.",
+    "image_path": "assets/images/2025-09-09.png"
+  },
+  {
     "date": "2025-09-08",
     "seeds": [
       "血月悬城",
