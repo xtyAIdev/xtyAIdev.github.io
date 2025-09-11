@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-11",
+    "seeds": [
+      "古镜回魂",
+      "血月当空",
+      "枯骨低语",
+      "幽宫夜行",
+      "咒缚轮回"
+    ],
+    "text": "我梦见自己在一座幽宫夜行，廊柱倾颓，纱幔无风自动。一轮血月当空，将庭院染成暗红，古镜回魂般映出扭曲的身影。墙角的枯骨低语，诉说着被咒缚轮回的往事，每一个音节都化作萤火，在空气中盘旋不散。我伸手触碰，却穿透了时光，仿佛自己也成了这无尽回廊中的一部分，被永恒的秘密轻轻缠绕。",
+    "image_prompt": "A surreal and dreamy night scene in an ancient palace, with decaying pillars and fluttering veils without wind. A blood moon overhead casts a dark red hue over the courtyard, distorted figures reflected in an antique mirror as if haunted. In the corner, whispering bones tell tales of cursed reincarnations, each syllable turning into floating fireflies. Reaching out, one's hand seems to pass through time, becoming part of the endless corridor, entwined by eternal secrets.",
+    "image_path": "assets/images/2025-09-11.png"
+  },
+  {
     "date": "2025-09-10",
     "seeds": [
       "星漩",
