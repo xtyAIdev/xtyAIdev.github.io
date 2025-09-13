@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-13",
+    "seeds": [
+      "星羽鲸",
+      "幻光鹿",
+      "萤梦蝶",
+      "月雾灵猫",
+      "晶尘妖精"
+    ],
+    "text": "我漂浮在缀满星尘的河流之上，一头巨大的星羽鲸缓缓游过天际，它的鳍翅洒落银辉，如同坠落的星河。岸边，幻光鹿昂首轻鸣，鹿角间流转着虹彩光芒，与空中翩跹的萤梦蝶共舞——蝶翼扇动时，梦境碎成金粉飘散。月雾灵猫悄无声息地踱步，足尖泛起乳白色的涟漪，身形时而凝聚如玉石，时而淡入月光。细小的晶尘妖精们忽聚忽散，在猫尾摇曳处织出闪烁的蛛网，将整个世界笼入一片温柔的迷离之中。",
+    "image_prompt": "Floating on a stardust-filled river, a colossal star-feathered whale swims across the sky, its fins casting silver light like falling stars. On the shore, an ethereal luminous deer lifts its head to call softly, its antlers glowing with rainbow hues, dancing with fluttering dream butterflies whose wings scatter golden dust. A moon mist cat tiptoes silently, leaving milky ripples, its form shifting from jade-like solidity to moonlight transparency. Tiny crystal pixies gather and disperse, weaving shimmering webs at the sway of the cat's tail, enveloping the world in a gentle, surreal haze.",
+    "image_path": "assets/images/2025-09-13.png"
+  },
+  {
     "date": "2025-09-12",
     "seeds": [
       "彩虹滑梯",
