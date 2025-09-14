@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-14",
+    "seeds": [
+      "星漩",
+      "银河摆渡",
+      "彗尾",
+      "星尘摇篮",
+      "月海漂流"
+    ],
+    "text": "我坠入一片旋转的星漩，乘上一叶银箔小舟开始银河摆渡。彗尾如纱，拂过眼帘，洒下闪烁的星尘，将我裹入温柔的星尘摇篮。舟身轻晃，仿佛漂荡在无声的月海，漫溯于发光的梦境之渊。时间碎成光粒，空间融作流水，我在无垠的深蓝中永恒地月海漂流，成为一粒微光，一缕叹息，一个被宇宙轻轻哼唱的秘密。",
+    "image_prompt": "Falling into a swirling galaxy, riding a silver foil boat through the cosmos, comet tails like gossamer brushing past, scattering shimmering stardust, enveloped in a gentle cradle of starlight. The boat gently sways as if floating on a silent sea of moonlight, wandering through the depths of glowing dreams. Time fractures into particles of light, space melts into flowing water, eternally drifting in an endless deep blue, becoming a speck of light, a whisper, a secret softly sung by the universe, in a surreal and dreamy art style.",
+    "image_path": "assets/images/2025-09-14.png"
+  },
+  {
     "date": "2025-09-13",
     "seeds": [
       "星羽鲸",
