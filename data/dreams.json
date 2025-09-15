@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-15",
+    "seeds": [
+      "记忆回廊",
+      "遗忘之河",
+      "心镜迷宫",
+      "时砂漩涡",
+      "梦茧"
+    ],
+    "text": "我漫步在无尽的记忆回廊，两侧的琉璃壁不断浮现泛黄的画面碎片。脚下忽然化作遗忘之河，银色的河水倒映着所有未曾说出口的话语。穿过心镜迷宫时，千万个变形的自我在镜中同时转身低语。时砂漩涡在廊尽头旋转，将破碎的时光碾成流金般的尘埃。最终我坠入巨大的梦茧，半透明的丝络包裹着星辰，在呼吸间明灭颤动，化作新的梦境胚胎。",
+    "image_prompt": "Wandering through an endless corridor of memories, amber fragments appear on glass walls. Beneath, a river of forgotten whispers in silver reflects unsaid words. Passing through a labyrinth of heart mirrors, countless distorted selves murmur. At the end, a vortex of time sand grinds broken moments into golden dust. Finally, falling into a colossal dream cocoon, translucent threads envelop stars, flickering with each breath, forming new dream embryos. Surreal and dreamy art style.",
+    "image_path": "assets/images/2025-09-15.png"
+  },
+  {
     "date": "2025-09-14",
     "seeds": [
       "星漩",
