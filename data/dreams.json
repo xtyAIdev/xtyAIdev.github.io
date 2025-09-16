@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-16",
+    "seeds": [
+      "月华纱",
+      "青石巷",
+      "故梦舟",
+      "铜雀台",
+      "玉簪渡"
+    ],
+    "text": "我踏着月华纱铺就的小径，步入一条幽深的青石巷。雾气缭绕中，一艘故梦舟悄然泊在巷口，载满闪烁的记忆碎片。舟子无声地招手，我便登船，任它漂流至远处的铜雀台。那台高耸入云，铜雀振翅欲飞，却忽然化作一阵细雨洒落。船至彼岸，见一女子以玉簪渡水，每划一次，水面便绽开一朵晶莹的莲花。她回头微笑，面容却如雾般模糊，唯有那玉簪在月光下泛着温润的光，指引我向更深的梦境漂去。",
+    "image_prompt": "A surreal and dreamy scene, walking on a moonlit path into a deep bluestone alley, mist swirling around. An old dream boat filled with glowing memory fragments is docked at the entrance, silently inviting me aboard. Drifting towards a distant Bronze Sparrow Terrace, towering to the clouds, where bronze sparrows transform into a gentle rain. On the other shore, a woman crosses water with a jade hairpin, each stroke creating shimmering lotus flowers. Her face is blurred like fog, but the jade pin glows warmly under the moonlight, guiding deeper into the dream.",
+    "image_path": "assets/images/2025-09-16.png"
+  },
+  {
     "date": "2025-09-15",
     "seeds": [
       "记忆回廊",
