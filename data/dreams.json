@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-20",
+    "seeds": [
+      "星漩",
+      "银河摆渡",
+      "辰砂",
+      "宇宙弦",
+      "星茧"
+    ],
+    "text": "我漂浮于一片旋转的星漩之中，仿佛正经历一场无声的银河摆渡。远方，辰砂色的星云如血又如梦，缓缓渗入黑暗。忽然，宇宙弦在虚空中振动，编织出光的旋律，将我引入一个发光的星茧。茧中时间柔软，星辰如卵般孵化，我在光的襁褓中重新诞生，化作一缕星尘，飘向无尽的深空。",
+    "image_prompt": "Floating in a swirling vortex of stars, experiencing a silent galactic journey, with cinnabar-colored nebulae bleeding into the darkness. Suddenly, cosmic strings vibrate, weaving melodies of light, leading me into a glowing star cocoon. Inside, time is soft, stars hatch like eggs, and I am reborn as stardust, drifting towards infinite space, in a surreal, dreamlike art style.",
+    "image_path": "assets/images/2025-09-20.png"
+  },
+  {
     "date": "2025-09-19",
     "seeds": [
       "天空",
