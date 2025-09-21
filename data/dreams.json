@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-09-21",
+    "seeds": [
+      "深海低语",
+      "珊瑚骨林",
+      "巨瞳",
+      "蠕虫幽穴"
+    ],
+    "text": "我沉入一片无光的疆域，深海低语如丝绸般缠绕耳际。前方浮现珊瑚骨林，苍白枝杈间浮动着幽蓝磷火。林间骤然睁开一枚巨瞳，金色瞳孔如熔岩流转，凝视我时时间仿佛凝滞。地面裂开蠕虫幽穴，无数透明触须探出，轻柔托起我向下坠落，穴壁脉动着星辉般的微光，仿佛正滑向宇宙的初生梦境。",
+    "image_prompt": "Submerged in a lightless realm, whispers of the deep sea like silk around ears, a forest of coral bones emerges ahead, pale branches floating with blue phosphorescent fire. Suddenly, a giant eye opens among the trees, its golden iris flowing like lava, time seems to freeze as it gazes. The ground splits open, revealing worm-like caves, countless transparent tentacles reaching out gently lifting me down, the cave walls pulsing with starlight, sliding into the primordial dream of the universe, surreal and dreamlike art style.",
+    "image_path": "assets/images/2025-09-21.png"
+  },
+  {
     "date": "2025-09-20",
     "seeds": [
       "星漩",
