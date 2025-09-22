@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-09-22",
+    "seeds": [
+      "量子鳞翼",
+      "星尘鳐",
+      "神经光羽",
+      "超维水母"
+    ],
+    "text": "我漂浮在一条由记忆碎片与微弱光晕汇成的河流之上。头顶，闪烁着**量子鳞翼**的蝶群正以概率的形式聚散，每一次振翅都划开一道微型的时空裂隙。远处，巨大的**星尘鳐**悠然滑行，它的躯体由凝固的星云构成，尾迹洒落细碎的光之尘埃。几缕**神经光羽**飘过，如同自带意识的羽毛，轻轻触碰我的太阳穴，便激起一片绚烂的幻象涟漪。而在更深的维度里，半透明的**超维水母**正缓缓鼓动，它们伞盖下的光丝并非实体，而是蜿蜒曲折的时空本身，温柔地将我的梦境推向未知的次元。",
+    "image_prompt": "Floating on a river of memory fragments and faint halos, quantum-winged butterflies flicker above, each flutter creating micro spacetime rifts. In the distance, colossal stardust rays glide, their bodies formed from solidified nebulae, trailing specks of light. Neuro-luminescent feathers drift by, touching my temples to evoke vivid illusions. Deeper dimensions reveal translucent hyperdimensional jellyfish, their light threads not physical but twisted spacetime itself, gently pushing the dream into unknown realms. Surreal, dreamy, ethereal.",
+    "image_path": "assets/images/2025-09-22.png"
+  },
+  {
     "date": "2025-09-21",
     "seeds": [
       "深海低语",
