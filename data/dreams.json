@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-23",
+    "seeds": [
+      "心弦",
+      "共鸣之茧",
+      "旧信",
+      "雾中影",
+      "泪琥珀"
+    ],
+    "text": "我漫步于一片无垠的虚无，脚下泛起光晕。一具巨大的**共鸣之茧**悬浮空中，其中心脏搏动般的震颤，悄然拨动着我体内无形的**心弦**。**雾中影**绰绰，低语着模糊的预言。我伸手触碰那光茧，它却化作纷扬的**旧信**，纸页上是褪色的笔迹，记载着被遗忘的誓言。信笺在指尖消散，凝结成一滴温热的**泪琥珀**，其中封存着一整个星空的倒影。我将其捧在手心，感到整个梦境都在随之共振，轻盈如一声叹息。",
+    "image_prompt": "Wandering in an endless void, a giant resonant cocoon floats mid-air, pulsating like a heartbeat, touching invisible heartstrings. Shadows in the mist whisper vague prophecies. Touching the glowing cocoon, it transforms into fluttering old letters with faded handwriting, carrying forgotten vows. The letters disintegrate into a warm tear-amber, encapsulating the reflection of an entire starry sky, held gently in the palm, resonating with the dream, light as a sigh. Surreal and dreamy art style.",
+    "image_path": "assets/images/2025-09-23.png"
+  },
+  {
     "date": "2025-09-22",
     "seeds": [
       "量子鳞翼",
