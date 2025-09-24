@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-24",
+    "seeds": [
+      "梦境",
+      "海洋",
+      "记忆",
+      "星辰",
+      "森林"
+    ],
+    "text": "我漂浮在一片无垠的**海洋**之上，海水是流动的**记忆**，泛着幽蓝的微光。空中悬浮着无数发光的**星辰**，它们并非遥不可及，而是像成熟的果实，触手可及。我信步走入一片由巨大水晶构成的**森林**，每一棵树木的纹理里都封存着往昔的**梦境**碎片，随着我的呼吸轻轻闪烁。整个**梦境**如同一场无声的交响，现实与虚幻的边界在此彻底消融。",
+    "image_prompt": "Floating above an endless ocean of flowing memories, glowing with a soft blue light, surrounded by countless luminous stars hanging in the air like ripe fruits within reach, walking into a vast forest made of giant crystals, each tree's texture containing fragments of past dreams, shimmering gently with every breath, the whole scene blending reality and fantasy in a surreal, dreamlike symphony",
+    "image_path": "assets/images/2025-09-24.png"
+  },
+  {
     "date": "2025-09-23",
     "seeds": [
       "心弦",
