@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-25",
+    "seeds": [
+      "星泪之湖",
+      "共鸣回响",
+      "心渊鲸歌",
+      "忆光沙漏",
+      "织梦蛛网"
+    ],
+    "text": "我漂浮在星泪之湖的水面，每一滴湖水都是一颗凝固的叹息，倒映着不存在于现实的星座。深处传来心渊鲸歌，那低沉而古老的共鸣回响，并非通过水流，而是直接震颤着我的灵魂。岸边，一座忆光沙漏正缓缓流转，金色的沙粒并非下落，而是向上漂浮，每一粒都包裹着一个模糊的笑脸。抬头望去，巨大的织梦蛛网在紫色的天幕上闪烁，连接着星辰与倒影，每当有流星划过，蛛丝便轻轻颤动，将新的梦境编织进这无垠的寂静里。",
+    "image_prompt": "Floating on the Star Tear Lake, each drop a solidified sigh reflecting non-existent constellations, deep resonant whale songs vibrating souls, not through water. Onshore, an Ephemeral Hourglass with golden grains floating upwards, each grain holding a blurry smile. Above, a giant Dreamweaver's Web glimmers against a purple sky, connecting stars and reflections, shimmering with new dreams as meteors pass, in a surreal, dreamy art style.",
+    "image_path": "assets/images/2025-09-25.png"
+  },
+  {
     "date": "2025-09-24",
     "seeds": [
       "梦境",
