@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-26",
+    "seeds": [
+      "时之茧",
+      "因果海",
+      "昨日之镜",
+      "未来回响",
+      "刹那永恒"
+    ],
+    "text": "我悬浮于无垠的**因果海**之上，海水是流动的光影，每一滴都映照着一个抉择的分岔。远方，一枚巨大的**时之茧**正无声脉动，其半透明的茧壁上，无数时间的丝线正缓慢编织。我低头，看见脚下平静的海面竟化作一面**昨日之镜**，镜中倒映的并非我的容颜，而是所有被我遗忘的细微过往。正当我沉溺于旧影，一声清越的钟鸣自虚空传来——那是**未来回响**，它穿透茧壁，在海上激起一圈圈银色的涟漪。在这一刻，过去与未来的界限彻底消融，我坠入了一种清醒的**刹那永恒**，仿佛亿万年的时光都凝结于这呼吸之间的一片寂静。",
+    "image_prompt": "Suspended above an endless sea of flowing light and shadow, each drop reflecting a choice's divergence. In the distance, a colossal pulsating Time Cocoon, its translucent walls woven with countless temporal threads. Below, the calm sea transforms into a Mirror of Yesterdays, not reflecting my face but forgotten pasts. As I lose myself in memories, a clear bell echoes from the void—the Future Resonance, piercing through the cocoon, creating silver ripples on the sea. Boundaries between past and future dissolve, plunging me into a surreal, dreamlike moment of eternal stillness, capturing eons in a breath.",
+    "image_path": "assets/images/2025-09-26.png"
+  },
+  {
     "date": "2025-09-25",
     "seeds": [
       "星泪之湖",
