@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-09-27",
+    "seeds": [
+      "御膳惊魂",
+      "龙袍跑偏",
+      "朝会鼾声",
+      "妃嫔美妆"
+    ],
+    "text": "金銮殿悬浮于流云之上，群臣的朝会鼾声如潮水般起伏，与檐角风铃共振出奇特的韵律。那位身着龙袍的帝王试图保持威仪，可灿金的龙袍总是不合时宜地跑偏，衣袂缠绕在蟠龙柱上，像挣脱不了的命运丝线。白玉阶下忽然摆开一席御膳，琉璃盏中盛着会说话的珍馐，它们窃窃私语着宫廷秘辛，这场御膳惊魂让琉璃蒸腾起虹彩雾气。而雾霭深处，妃嫔们对镜勾勒着星辉般的眼眉，她们的胭脂是朝霞研磨，口脂是葡萄酒凝冻，可每抹完一笔，水银镜面便漾开涟漪，将绝美妆容化作游动的锦鲤。",
+    "image_prompt": "A surreal and dreamy scene featuring a golden palace floating among flowing clouds, ministers' snores echoing like waves, resonating with wind chimes. An emperor in an askew golden dragon robe, entangled with dragon pillars. Below, a feast appears, dishes whispering secrets, creating iridescent mists. In the mist, consorts apply makeup, their rouge made from dawn, lip color from frozen wine, each stroke causing mirrors to ripple, turning faces into swimming koi.",
+    "image_path": "assets/images/2025-09-27.png"
+  },
+  {
     "date": "2025-09-26",
     "seeds": [
       "时之茧",
