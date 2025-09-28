@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-28",
+    "seeds": [
+      "星轨残卷",
+      "蜃楼",
+      "玉魄",
+      "千年一瞬",
+      "逆旅"
+    ],
+    "text": "我行走于一座不断变幻的**蜃楼**，脚下是流转的**星轨残卷**，仿佛踏着破碎的宇宙法则。一泓清冷的光晕悬浮于空中，那是**玉魄**，它低语着被遗忘的传说。周遭的景象在须臾间盛开又凋零，**千年一瞬**，王朝与沧海皆成弹指。我恍然醒悟，自身原是这浩瀚时空里的一名**逆旅**过客，所有的追寻，不过是一场在清醒边缘即将消散的、华丽的迷途。",
+    "image_prompt": "Wandering through an ever-changing mirage, walking on swirling star trails as if treading broken cosmic laws. A cold halo of jade spirit floats in the air, whispering forgotten legends. Surrounding scenes bloom and wither in moments, a thousand years in a blink, dynasties and seas vanish like a snap. Realizing I am but a transient traveler in this vast space-time, all pursuits are but a fleeting, magnificent detour on the edge of awakening. Surreal, dreamy, ethereal art style.",
+    "image_path": "assets/images/2025-09-28.png"
+  },
+  {
     "date": "2025-09-27",
     "seeds": [
       "御膳惊魂",
