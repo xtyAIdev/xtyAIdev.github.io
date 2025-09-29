@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-09-29",
+    "seeds": [
+      "时光沙漏",
+      "昨日玫瑰",
+      "千年一瞬",
+      "重逢站台",
+      "未来回音"
+    ],
+    "text": "我悬浮于一个巨大的时光沙漏之中，亿万颗星辰如沙粒般缓缓坠落。沙漏底部，一朵昨日玫瑰在虚空中绽放，每一片花瓣都映照着早已逝去的黄昏。刹那间，千年一瞬，我听见未来回音在耳畔低语，那声音如同破碎的琉璃轻轻碰撞。当我降落在重逢站台，锈蚀的列车载着月光的残片驶来，车窗内所有未完成的对话正凝结成发光的琥珀。",
+    "image_prompt": "Suspended in a colossal hourglass, countless stars fall like grains of sand. At the bottom, a rose from yesterday blooms in the void, each petal reflecting lost sunsets. In an instant, a millennium passes, whispers of the future echo, sounding like shattered glass. Landing on a reunion platform, a rusted train arrives carrying fragments of moonlight, windows filled with unfinished conversations frozen into glowing amber. Surreal, dreamy, rich in visual details and artistic style.",
+    "image_path": "assets/images/2025-09-29.png"
+  },
+  {
     "date": "2025-09-28",
     "seeds": [
       "星轨残卷",
