@@ -1,5 +1,15 @@
 [
   {
+    "date": "2025-09-30",
+    "seeds": [
+      "健忘蜗牛",
+      "笑涡回廊"
+    ],
+    "text": "我漫步在无尽的**笑涡回廊**，每一处弯转都泛起涟漪般的浅笑，将空气晕染成蜜糖的色泽。廊柱上栖着**健忘蜗牛**，它们银白的黏液在身后凝成瞬息凋零的星轨。每当它们抬头，贝壳便透出往昔记忆的浮光掠影——那些被遗弃的对话与未完成的诗篇，如朝露在阳光下蒸腾消散。我试图拾起一片褪色的笑涡，它却化作流沙从指缝滑落，只留下薄荷味的叹息在廊中轻颤。蜗牛缓缓爬向回廊深处，身后的星迹与涟漪交织成螺旋，将时间卷曲成永恒的瞬间。",
+    "image_prompt": "Wandering in an endless corridor of smiles, each turn radiates a honey-hued glow. On the pillars, forgetful snails leave behind ephemeral star trails of silver mucus. Their shells flicker with forgotten memories and unfinished poems, evaporating like morning dew. Attempting to catch a faded smile, it slips through fingers like sand, leaving a minty sigh. The snails slowly move deeper, their trails intertwining into a spiral, bending time into an eternal moment. Surreal, dreamy, and rich in visual details.",
+    "image_path": "assets/images/2025-09-30.png"
+  },
+  {
     "date": "2025-09-29",
     "seeds": [
       "时光沙漏",
