@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-01",
+    "seeds": [
+      "血月",
+      "古镜幽魂",
+      "宫墙低语",
+      "枯骨回魂",
+      "青铜咒"
+    ],
+    "text": "一轮巨大的血月悬于天穹，将朱红宫墙染成暗紫色。斑驳的宫墙开始渗出细碎低语，那些前朝秘闻如藤蔓缠绕脚踝。廊下那面青铜古镜泛起涟漪，镜中浮出半透明的幽魂，提着青灯在镜面里徘徊。白玉阶下突然传来枯骨拼合的脆响，森白指节正随着青铜咒文的幽光重新覆上血肉，而墙面的咒文却像活蛇般游走进月光照不到的阴影里。",
+    "image_prompt": "A colossal blood moon hangs in the sky, casting a dark purple hue over vermilion palace walls. The ancient walls whisper fragmented secrets, like vines entwining ankles. An antique bronze mirror ripples, revealing translucent spirits carrying blue lanterns wandering within. Below white jade steps, the sound of bones fusing echoes, as skeletal fingers reanimate under the eerie glow of bronze incantations, while the wall inscriptions slither into moonless shadows. Surreal, dreamlike, with rich details and an ethereal atmosphere.",
+    "image_path": "assets/images/2025-10-01.png"
+  },
+  {
     "date": "2025-09-30",
     "seeds": [
       "健忘蜗牛",
