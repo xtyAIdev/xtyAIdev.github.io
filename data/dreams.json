@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-10-02",
+    "seeds": [
+      "御猫上朝",
+      "火锅江湖",
+      "妃嫔蹦迪",
+      "穿越快递"
+    ],
+    "text": "琉璃宫阙悬浮于云海，朱红宫门缓缓开启。着蟒袍的御猫们捧着玉笏列队上朝，尾巴卷起星辉如奏折流转。忽有椒香漫溢，白玉阶化作沸腾的火锅江湖，毛肚与星子在同锅底沉浮争锋。椒麻雾气深处，霓裳妃嫔踩着电音韵律蹦迪，珍珠步摇幻化成七彩光球在她们发间旋转。此时天际裂开镀金缺口，穿云箭般的穿越快递坠落御前，锦盒里装着三枚尚未凝固的黄昏，盒底附笺曰：签收前请保持月亮的真空包装。",
+    "image_prompt": "A surreal and dreamy scene featuring a crystal palace floating in the clouds, vermilion gates slowly opening, cats in dragon robes holding jade tablets, their tails swirling with starlight. The white jade steps transform into a bubbling hot pot filled with tripe and stars, spicy mist envelops dancing concubines to electronic beats, pearls in their hair turning into colorful light balls. A golden rift in the sky reveals a parcel falling like an arrow, containing three molten sunsets, with a note: \"Keep moon vacuum sealed until receipt.\"",
+    "image_path": "assets/images/2025-10-02.png"
+  },
+  {
     "date": "2025-10-01",
     "seeds": [
       "血月",
