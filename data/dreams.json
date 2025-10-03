@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-03",
+    "seeds": [
+      "渊瞳",
+      "鲸落",
+      "幻月水母",
+      "潮汐低语",
+      "沉梦之舟"
+    ],
+    "text": "我乘着沉梦之舟，滑入一片幽蓝的深境。下方是无尽的渊瞳，正凝视着上方漂浮的幻月水母——它们撑开半透明的伞盖，如呼吸的月亮，播撒着冷光。远处，巨大的鲸落缓缓沉降，骨架化作发光的宫殿，而潮汐低语在耳畔响起，像古老的诗篇被水波反复吟唱。舟身轻旋，我随暗流漂向渊瞳深处，那里有星尘在鲸骨间流转，而水母群正托起整个夜晚的梦。",
+    "image_prompt": "Surreal dream boat floating in a deep blue abyss, translucent moon jellyfish glowing above endless abyssal eyes, giant whale skeleton sinking as a luminous palace, star dust swirling among bones, tides whispering ancient poems, dreamy and ethereal atmosphere",
+    "image_path": "assets/images/2025-10-03.png"
+  },
+  {
     "date": "2025-10-02",
     "seeds": [
       "御猫上朝",
