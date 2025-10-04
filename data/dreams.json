@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-04",
+    "seeds": [
+      "晶羽灵",
+      "幻瞳",
+      "月影兽",
+      "流光鲸",
+      "梦语蝶"
+    ],
+    "text": "我漂浮在无垠的梦境之海，看见流光鲸缓缓游过天际，它们银白的脊背划开星幕，洒落淅淅沥沥的光雨。一只晶羽灵停在我掌心，它的翅膀由亿万冰晶凝结，每次颤动都折射出迷离的彩虹。月影兽在薄雾中踱步，足尖触及的水面泛起紫罗兰色的涟漪。那些涟漪里睁开无数幻瞳，瞳孔中映照着交叠的时空。这时梦语蝶群翩然而至，它们翅膀上的磷粉化作会发光的低语，轻轻告诉我：这琉璃般的夜晚，正是黎明沉睡时的呼吸。",
+    "image_prompt": "Floating in an endless dream sea, luminous whales glide across the sky, their silver backs parting star curtains, showering light rain. A crystal-feathered spirit rests on my palm, its wings formed of countless ice crystals, each flutter reflecting iridescent rainbows. Moonshadow beasts pace through mist, their feet touching water to create violet ripples, within which myriad illusory eyes open, reflecting overlapping dimensions. Dreamwhisper butterflies arrive, their glowing phosphorescent wings whispering softly: this glassy night is dawn's sleeping breath. Surreal and ethereal art style.",
+    "image_path": "assets/images/2025-10-04.png"
+  },
+  {
     "date": "2025-10-03",
     "seeds": [
       "渊瞳",
