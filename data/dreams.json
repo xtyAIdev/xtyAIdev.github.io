@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-10-06",
+    "seeds": [
+      "时空茧",
+      "镜渊",
+      "问道",
+      "浮生蝶"
+    ],
+    "text": "我坠入一枚流转的时空茧，光丝缠绕如液态星河。茧壁渐透，下方是无尽的镜渊，万千倒影在深渊里低语，既是我，又非我。我向其中最亮的一瞥问道：“何处是归途？”它漾开涟漪，浮生蝶便从波心振翅而出，鳞粉洒落成无数记忆的碎片。蝶翼轻扇，卷起亿万人生死爱憎的光尘，将我托起，向着茧外那既温柔又残酷的黎明飘去。",
+    "image_prompt": "Falling into a flowing time-space cocoon, liquid starlight threads swirling around. The cocoon wall gradually becomes transparent, revealing an endless abyss of mirrors below, with countless reflections whispering, both me and not me. Asking the brightest reflection \"Where is the way back?\" it ripples, from which a butterfly emerges, its scales scattering into fragments of memories. With a gentle flutter, the butterfly stirs up a cloud of light and dust representing life, death, love, and hate, lifting me towards the tender yet cruel dawn outside the cocoon. Surreal, dreamy art style.",
+    "image_path": "assets/images/2025-10-06.png"
+  },
+  {
     "date": "2025-10-05",
     "seeds": [
       "共鸣棱镜",
