@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-08",
+    "seeds": [
+      "幻瞳",
+      "晶羽兽",
+      "月影灵",
+      "雾形",
+      "织梦者"
+    ],
+    "text": "我踏入一片流动的雾形之中，雾气缠绕足踝，化作阶梯引我上升。空中悬浮着织梦者的银色纺车，每根丝线都牵动着一片星云。晶羽兽悄然踱步，它的羽毛由亿万冰晶凝结，振翅时洒下细碎的彩虹。月影灵在远处起舞，身形随月光聚散，如同水底摇曳的光斑。最令人迷失的是那对幻瞳——它们高悬天际，如旋转的万花筒，每一次眨眼都重塑着这个世界的轮廓，将现实温柔地解离又重组。",
+    "image_prompt": "Enter a surreal dreamland, flowing mist transforms into stairs, silver spinning wheels float in the air connected to nebulae, crystal feathered beasts walk gracefully, their wings scattering rainbow shards, moonlight spirits dance afar like shimmering water spots, mesmerizing kaleidoscopic eyes in the sky reshape the world with each blink, blending reality and dreams.",
+    "image_path": "assets/images/2025-10-08.png"
+  },
+  {
     "date": "2025-10-07",
     "seeds": [
       "心弦",
