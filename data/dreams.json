@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-09",
+    "seeds": [
+      "海洋",
+      "星辰",
+      "梦境",
+      "森林",
+      "幻象"
+    ],
+    "text": "我漂浮在颠倒的深海，发光的星辰如鱼群从指缝游过。鲸鱼的吟唱化作气泡，升腾成悬浮的森林，每片树叶都是摇曳的幻象。珊瑚枝桠间流淌着星砂的河，水母撑着月光伞在树影间巡游。这时整片森林突然舒展成透明的羽翼，带着所有闪烁的幻象向上飞升——原来我始终躺在梦境的海底，望着天空里倒悬的，波光粼粼的我自己。",
+    "image_prompt": "Floating in an inverted deep sea, glowing stars like schools of fish swim through fingers, whale songs transform into bubbles rising to form a floating forest, each leaf a shimmering illusion, star sand rivers flow between coral branches, jellyfish with moonlight umbrellas patrol tree shadows, the entire forest suddenly unfolds into transparent wings, carrying all sparkling illusions ascending, lying on the dream's seabed, gazing at the upside-down, glittering self in the sky, surreal and dreamy art style",
+    "image_path": "assets/images/2025-10-09.png"
+  },
+  {
     "date": "2025-10-08",
     "seeds": [
       "幻瞳",
