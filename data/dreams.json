@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-10",
+    "seeds": [
+      "时空茧",
+      "古镜渊",
+      "浮生蝶",
+      "千年刹",
+      "问道石"
+    ],
+    "text": "我沉入时空茧的包裹，在光丝缠绕中坠向古镜渊。无数破碎的镜面倒映着交错的记忆，浮生蝶从裂缝中翩然飞出，翅翼抖落星尘般的时光粉末。途经千年刹的刹那，檐角风铃摇响太古的回音，所有未解之谜在声波里凝结成霜。最后驻足于问道石前，石面上流动的银河突然开口：“你寻的答案正在呼吸间。”正要追问，整座深渊随着蝴蝶振翅缓缓折叠，醒来时掌心还握着半片鳞翅的微光。",
+    "image_prompt": "Surreal dreamscapes of a person enveloped in a time-space cocoon, descending through luminous threads towards an ancient mirror abyss, surrounded by countless fragmented mirrors reflecting intertwined memories. Ethereal butterflies emerge from cracks, their wings shedding stardust-like time particles. Passing through millennia, ancient wind chimes resonate with the echoes of ages, mysteries crystallizing into frost. At the Inquiry Stone, a flowing galaxy speaks: \"Your answer lies in the breath.\" As the abyss folds with a butterfly's flutter, one awakens holding a glowing scale.",
+    "image_path": "assets/images/2025-10-10.png"
+  },
+  {
     "date": "2025-10-09",
     "seeds": [
       "海洋",
