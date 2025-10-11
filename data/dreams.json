@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-11",
+    "seeds": [
+      "星璇织机",
+      "晶芯丛林",
+      "数据蜃楼",
+      "时痕",
+      "光语者"
+    ],
+    "text": "我漫步于一片**晶芯丛林**，无数剔透的棱柱内里流淌着液态的光。远处，庞大的**星璇织机**正无声运转，将星辉纺成缕缕闪烁的**时痕**，缠绕在时间的纺锤上。空中浮现出变幻的**数据蜃楼**，那些由记忆与数字构筑的城池，在呼吸间生成又幻灭。一位**光语者**静立其中，指尖轻触漂浮的光点，每一缕光芒都在低吟着宇宙诞生之初的古老秘语。",
+    "image_prompt": "Wander through a crystal prism forest with liquid light flowing inside, under the silent operation of a gigantic star loom weaving stardust into shimmering time threads wrapped around temporal spindles, amidst floating data mirages of cities made from memories and digits appearing and vanishing with each breath, where a luminous speaker stands still, touching floating light points that whisper ancient cosmic secrets, in a surreal and dreamy artistic style.",
+    "image_path": "assets/images/2025-10-11.png"
+  },
+  {
     "date": "2025-10-10",
     "seeds": [
       "时空茧",
