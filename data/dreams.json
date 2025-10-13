@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-13",
+    "seeds": [
+      "星尘回廊",
+      "忆海",
+      "琉璃迷宫",
+      "心钥",
+      "雾中蝶"
+    ],
+    "text": "我踏入星尘回廊，无数光粒在指尖流转成旋涡。前方忆海泛起微澜，往事如发光的透明水母缓缓漂浮。琉璃迷宫在雾中显现，墙壁折射着记忆的碎片，每一面都映出不同的年华。雾中蝶翩然引路，翅翼洒落磷粉，化作悬浮的星座。当迷宫中心的心钥落入掌心，所有琉璃墙面忽然如冰消融，原来打开世界的钥匙，一直在我胸膛内轻轻跳动。",
+    "image_prompt": "Enter a stardust corridor, swirling light particles at fingertips, memories like glowing transparent jellyfish floating in the sea of recollections. A glass labyrinth appears in the mist, walls reflecting fragments of memories, each side showing different eras. Mist butterflies lead the way, their wings scattering phosphorescent powder forming constellations. As the heart key from the maze center falls into hand, all glass walls melt like ice, revealing the world's key has been gently beating within the chest. Surreal and dreamy art style.",
+    "image_path": "assets/images/2025-10-13.png"
+  },
+  {
     "date": "2025-10-12",
     "seeds": [
       "数据溪流",
