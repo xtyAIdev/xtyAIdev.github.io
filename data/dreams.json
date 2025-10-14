@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-14",
+    "seeds": [
+      "琉璃回廊",
+      "忆海拾贝",
+      "心钥",
+      "雾中蝶",
+      "旧日棱镜"
+    ],
+    "text": "我漫步在无尽延伸的琉璃回廊中，廊壁荡漾着液态的光晕。雾中蝶翩然掠过，翅翼抖落细碎的星尘。俯身望向忆海拾贝，斑斓的螺壳里封印着往日的呢喃。当指尖触碰到那枚锈蚀的心钥，所有紧闭的门扉开始轻轻震颤。最后我站在旧日棱镜前，看见无数个自己正从折光深处走来——她们手持破碎的镜片，为我拼凑出通往黎光的秘径。",
+    "image_prompt": "Wandering through an endless corridor of liquid glass, walls shimmer with iridescent light. Butterflies flit in the mist, their wings scattering stardust. Bending to pick up a colorful seashell, inside whispers of the past are sealed. Touching the rusted heart key, all closed doors tremble. Standing before a prism of yesteryears, countless versions of myself emerge from refracted light, holding broken mirrors, piecing together a path to dawn, surreal and dreamy art style.",
+    "image_path": "assets/images/2025-10-14.png"
+  },
+  {
     "date": "2025-10-13",
     "seeds": [
       "星尘回廊",
