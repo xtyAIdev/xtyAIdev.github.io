@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-15",
+    "seeds": [
+      "闹钟虫洞",
+      "错乱朝靴",
+      "滑稽沙漏",
+      "穿越喷嚏",
+      "古今串线"
+    ],
+    "text": "我在一个颠倒的房间里醒来，墙壁上挂着的**闹钟虫洞**正吞噬着时间。脚下，一双**错乱朝靴**自顾自地踱步，靴筒里流淌出细沙，在空气中凝成**滑稽沙漏**的形状。忽然一个**穿越喷嚏**袭来，我坠入光的漩涡，听见**古今串线**的杂音——李白的诗句与卫星的电磁波在耳畔交织成星河流转。朝靴化作月亮，沙漏碎成银河，而虫洞的尽头，另一个我正从喷嚏中诞生。",
+    "image_prompt": "In an upside-down room, a surreal alarm clock wormhole devours time on the wall, while a pair of chaotic imperial boots wander aimlessly, sand flowing from them forming comical hourglasses mid-air. Suddenly, a sneeze through time pulls me into a vortex of light, where ancient and modern sounds intertwine, Li Bai's verses mixing with satellite signals like star rivers. The boots transform into moons, the hourglasses shatter into galaxies, at the end of the wormhole, another self is born from the sneeze, all in a dreamy, surrealist style.",
+    "image_path": "assets/images/2025-10-15.png"
+  },
+  {
     "date": "2025-10-14",
     "seeds": [
       "琉璃回廊",
