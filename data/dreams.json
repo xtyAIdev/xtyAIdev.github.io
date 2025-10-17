@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-17",
+    "seeds": [
+      "星漩",
+      "以太之海",
+      "光年残响",
+      "星茧",
+      "引力浮梦"
+    ],
+    "text": "我漂浮于无垠的以太之海，万千星漩在指尖缠绕成发光的脉络。远方传来光年残响，像是恒星临终前的歌谣在真空里凝固成水晶。某个星漩中心，半透明的星茧正随着宇宙的呼吸微微搏动，茧中蜷缩着尚未诞生的星座。当我试图触碰，整个空间忽然坍缩成引力的浮梦——所有星辰如蒲公英般飘散，而我坠入了一粒星尘的梦境核心。",
+    "image_prompt": "Floating in an endless sea of ether, luminous tendrils of star vortices entwine around fingertips, distant light-year echoes crystallize into frozen stellar songs. At the heart of a vortex, a semi-transparent stellar cocoon pulses with the universe's breath, cradling unborn constellations. Upon touch, space collapses into a dreamy gravitational pull, stars disperse like dandelion seeds, and I fall into the core of a stardust dream, all depicted in a surreal, dreamlike artistic style.",
+    "image_path": "assets/images/2025-10-17.png"
+  },
+  {
     "date": "2025-10-16",
     "seeds": [
       "心渊",
