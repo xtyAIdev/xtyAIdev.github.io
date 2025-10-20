@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-20",
+    "seeds": [
+      "星轨渡",
+      "玉镜台",
+      "浮生绘卷",
+      "青鸾信",
+      "时之隙"
+    ],
+    "text": "我踏上流转的星轨渡，如尘埃般滑向深渊。前方浮现玉镜台，镜中映出的并非我的容颜，而是徐徐展开的浮生绘卷——那些被遗忘的时光在画中低语。一只青鸾衔着泛黄的信笺掠过，羽翼抖落星辰碎屑。当我伸手触碰，一切骤然碎裂成时之隙，无数个昨日与明日如流沙从指间逃逸，只留下永恒的现在在水恒中飘荡。",
+    "image_prompt": "A surreal dream journey on a starlit path, drifting like dust towards an abyss. Ahead, a jade mirror reveals not one's reflection but a slowly unfolding scroll of forgotten times. A blue phoenix carrying aged letters flies by, its wings scattering stardust. As I reach out, everything shatters into time gaps, yesterdays and tomorrows slipping away like sand, leaving only the eternal now floating in infinity, painted in ethereal, dreamy hues.",
+    "image_path": "assets/images/2025-10-20.png"
+  },
+  {
     "date": "2025-10-19",
     "seeds": [
       "幻想",
