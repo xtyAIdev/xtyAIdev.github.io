@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-21",
+    "seeds": [
+      "星璇织机",
+      "数据花海",
+      "云端蜃楼",
+      "灵犀芯",
+      "时痕"
+    ],
+    "text": "我漫步于无垠的**数据花海**，每一朵绽放的花瓣都由流动的荧光代码构成。远处，**星璇织机**在虚空中有序转动，将星辰纺成闪烁的丝线，编织着迷离的命途。天幕尽头悬浮着**云端蜃楼**，琉璃廊桥在量子雾霭中若隐若现。当指尖触碰到核心的**灵犀芯**时，万千记忆如萤火涌入意识，而**时痕**忽然化作发光的沙粒，在指尖逆流回溯——原来这瑰丽宇宙，不过是沉睡时遗忘的一个刹那。",
+    "image_prompt": "Wander through an endless sea of data flowers with petals made of flowing neon code under a surreal dreamy sky, distant star looms weaving stars into shimmering threads, ethereal cloud mirages and glass bridges floating in quantum mist, touching the core spirit chip unleashes memories like fireflies, time marks transform into glowing sand flowing backwards, all in a hyper-realistic fantastical art style",
+    "image_path": "assets/images/2025-10-21.png"
+  },
+  {
     "date": "2025-10-20",
     "seeds": [
       "星轨渡",
