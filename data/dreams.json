@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-22",
+    "seeds": [
+      "忆廊",
+      "时之回响",
+      "心镜迷宫",
+      "遗忘之河",
+      "织梦蛛网"
+    ],
+    "text": "我漫步在无尽的**忆廊**，两侧的画卷流淌着往昔的光影。忽然，**织梦蛛网**捕获了时间的碎片，将我引向**心镜迷宫**。无数镜像中，往昔与未来交织低语，**时之回响**在迷宫里荡漾成涟漪。穿过迷宫，**遗忘之河**在星空下静谧蜿蜒，河水由消逝的瞬间凝成。我掬起一捧，回忆便化作银色的鱼儿，游回记忆的深潭。",
+    "image_prompt": "Wandering through an endless corridor of memories, surrounded by flowing tapestries of past light and shadow, caught in a web of dreamweaving spiders capturing time fragments, leading to a labyrinth of heart mirrors where past and future whisper, echoes of time ripple through the maze, beyond lies the river of forgetfulness under starlit skies, its waters formed from vanished moments, holding a handful turns silver fish swimming back into the depths of memory, in a surreal and dreamlike artistic style",
+    "image_path": "assets/images/2025-10-22.png"
+  },
+  {
     "date": "2025-10-21",
     "seeds": [
       "星璇织机",
