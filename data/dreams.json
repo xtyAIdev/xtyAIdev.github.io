@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-23",
+    "seeds": [
+      "忆廊",
+      "心象回廊",
+      "流光虫",
+      "织忆蛛",
+      "时之沙"
+    ],
+    "text": "我漫步在无尽的心象回廊，两侧墙壁由半透明的记忆凝成，时而泛起涟漪。流光虫如液态星辰在穹顶游弋，拖曳的光尾织成瞬息万变的星图。织忆蛛在角落忙碌，银丝从腹部分泌，将破碎的时光缀成连贯的画卷。时有沙漏在廊角翻转，时之沙坠落的轨迹里，昨日的对话与明日的叹息同时闪烁。整条忆廊随着我的呼吸微微搏动，仿佛我正行走在某个巨大生物的梦境血管中。",
+    "image_prompt": "Wandering in an endless corridor of the mind, translucent walls made of memories ripple softly. Luminous insects like liquid stars drift across the ceiling, their trailing lights weaving ever-changing constellations. Memory-weaving spiders in corners secrete silver threads, stitching fragmented time into a continuous tapestry. Hourglasses flip at intervals, with sands of time falling, yesterday's conversations and tomorrow's sighs twinkling within. The entire corridor pulsates gently with each breath, as if walking through the dream veins of a colossal being, in a surreal and dreamy artistic style.",
+    "image_path": "assets/images/2025-10-23.png"
+  },
+  {
     "date": "2025-10-22",
     "seeds": [
       "忆廊",
