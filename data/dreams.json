@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-25",
+    "seeds": [
+      "光影",
+      "海洋",
+      "时间",
+      "森林",
+      "梦境"
+    ],
+    "text": "在梦境深处，我踏入一片光影交织的森林，树木由流动的时间凝成，枝叶间滴落银色的瞬息。远处，整片海洋倒悬于天际，蔚蓝的浪涛无声翻涌，却化作浮动的薄雾浸润大地。我踩著星尘铺成的小径，看见自己的影子在水中绽成涟漪，而过去与未来的回音，正随潮汐在枝桠间低语。这片天地没有边界，唯有永恒的黄昏，将现实温柔地溶解于一场无尽的徜徉。",
+    "image_prompt": "A surreal and dreamy forest where trees are made of flowing time, silver moments dripping from leaves, an inverted ocean in the sky with blue waves turning into mist, a path paved with stardust, shadows rippling in water, echoes of past and future whispering among branches, boundless twilight dissolving reality into endless wandering, ethereal and enchanting atmosphere",
+    "image_path": "assets/images/2025-10-25.png"
+  },
+  {
     "date": "2025-10-24",
     "seeds": [
       "数据之海",
