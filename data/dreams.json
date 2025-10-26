@@ -1,5 +1,18 @@
 [
   {
+    "date": "2025-10-26",
+    "seeds": [
+      "蠕动之月",
+      "哀嚎回廊",
+      "骨林",
+      "悬瞳",
+      "渊舌"
+    ],
+    "text": "我行走在哀嚎回廊，两侧墙壁随着呜咽声起伏。穹顶之上，蠕动之月如活物般缓缓收缩舒展，投下黏稠的月光。前方浮现骨林，无数脊椎骨破土而出，枝桠间悬挂着千万颗悬瞳，正随不可见的节奏开合。地面突然裂开，渊舌自地心探出，舔舐着飘落的月光碎屑，所经之处皆化作晶莹的叹息。整座梦境在呼吸，而我不过是它转瞬即逝的一个颤音。",
+    "image_prompt": "Walking through the Wailing Corridor, walls undulate with sobs. Above, a writhing moon expands and contracts, casting viscous moonlight. Ahead, a forest of bones emerges, countless spines breaking through the earth, with myriad hanging eyes blinking to an unseen rhythm. The ground splits, revealing abyssal tongues that lick shimmering moonlight fragments, turning everything they touch into crystalline sighs. The entire dream breathes, I am but a fleeting tremor in its expanse, surreal and dreamlike.",
+    "image_path": "assets/images/2025-10-26.png"
+  },
+  {
     "date": "2025-10-25",
     "seeds": [
       "光影",
