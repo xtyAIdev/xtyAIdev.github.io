@@ -129,7 +129,7 @@ def call_tongyi_chat_api(prompt, max_tokens=300):
     }
     
     payload = {
-        "model": "qwen-max",
+        "model": "qwen3-max",
         "input": {
             "messages": [{"role": "user", "content": prompt}]
         },
